@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-09-21T06:03:13.483Z</updated>
+  <updated>2021-09-22T03:20:34.558Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>指令</title>
+    <link href="http://cxdshibaba.github.io/2021/09/22/%E6%8C%87/"/>
+    <id>http://cxdshibaba.github.io/2021/09/22/%E6%8C%87/</id>
+    <published>2021-09-22T03:18:54.000Z</published>
+    <updated>2021-09-22T03:20:34.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo new “name”       # 新建文章<br>hexo new page “name”  # 新建页面<br>hexo g                # 生成页面<br>hexo d                # 部署<br>hexo g -d             # 生成页面并部署<br>hexo s                # 本地预览<br>hexo clean            # 清除缓存和已生成的静态文件<br>hexo help             # 帮助</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;hexo new “name”       # 新建文章&lt;br&gt;hexo new page “name”  # 新建页面&lt;br&gt;hexo g                # 生成页面&lt;br&gt;hexo d                # 部署&lt;br&gt;hexo g -d  </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
