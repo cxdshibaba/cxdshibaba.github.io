@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cxdshibaba.github.io/2021/10/01/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/</loc>
+    
+    <lastmod>2021-10-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/</loc>
     
     <lastmod>2021-09-30</lastmod>
@@ -25,7 +32,7 @@
 
   <url>
     <loc>http://cxdshibaba.github.io/</loc>
-    <lastmod>2021-09-30</lastmod>
+    <lastmod>2021-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
