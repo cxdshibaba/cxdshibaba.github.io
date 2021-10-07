@@ -41,14 +41,14 @@
     <link href="http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/"/>
     <id>http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/</id>
     <published>2021-09-30T13:18:10.000Z</published>
-    <updated>2021-10-07T07:16:05.523Z</updated>
+    <updated>2021-10-07T08:45:39.617Z</updated>
     
-    <content type="html"><![CDATA[<p>首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从<br>HTTP history中找到网址内容<br><a href="https://i.bmp.ovh/imgs/2021/10/3b92b6094495de50.png">https://i.bmp.ovh/imgs/2021/10/3b92b6094495de50.png</a></p>]]></content>
+    <content type="html"><![CDATA[<p>首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从<br>HTTP history中找到网址内容<br><img src="https://i.bmp.ovh/imgs/2021/10/3b92b6094495de50.png"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从&lt;br&gt;HTTP history中找到网址内容&lt;br&gt;&lt;a href=&quot;https://i.bmp.ovh/</summary>
+    <summary type="html">&lt;p&gt;首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从&lt;br&gt;HTTP history中找到网址内容&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh</summary>
       
     
     
