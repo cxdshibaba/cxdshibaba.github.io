@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-07T09:21:23.401Z</updated>
+  <updated>2021-10-07T09:27:28.785Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://cxdshibaba.github.io/2021/10/01/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/"/>
     <id>http://cxdshibaba.github.io/2021/10/01/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/</id>
     <published>2021-10-01T14:22:08.000Z</published>
-    <updated>2021-10-07T09:21:23.401Z</updated>
+    <updated>2021-10-07T09:27:28.785Z</updated>
     
-    <content type="html"><![CDATA[<p>首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，<br>将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着在Position中将用户名两边的&amp;符号删掉，固定爆破密码<br>最后进行爆破<br><img src="https://i.loli.net/2021/10/07/jzGwIDbulEeWY9U.png" alt="image.png"><br><img src="https://i.loli.net/2021/10/07/eBHdOCtAjgZTbJR.png" alt="image.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，<br>将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着在Position中将用户名两边的&amp;符号删掉，固定爆破密码<br>最后进行爆破<br><img src="https://i.bmp.ovh/imgs/2021/10/fc16f9771bb6d067.png"><br><img src="https://i.bmp.ovh/imgs/2021/10/b01d4ddcf3f72ec1.png"></p>]]></content>
     
     
       
