@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-07T09:27:28.785Z</updated>
+  <updated>2021-10-11T14:07:37.086Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>靶场搭建</title>
+    <link href="http://cxdshibaba.github.io/2021/10/11/%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/"/>
+    <id>http://cxdshibaba.github.io/2021/10/11/%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-10-11T13:53:49.000Z</published>
+    <updated>2021-10-11T14:07:37.086Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先下载phpstudy2018<br><img src="https://i.bmp.ovh/imgs/2021/10/37d34a718091421c.png"><br>解压完后启动<br><img src="https://i.bmp.ovh/imgs/2021/10/26e712311d5c7810.png"><br>接着在<a href="https://github.com/Audi-1/sqli-labs%E5%9C%B0%E5%9D%80%E4%B8%AD%E4%B8%8B%E8%BD%BD%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6">https://github.com/Audi-1/sqli-labs地址中下载所有文件</a><br><img src="https://i.bmp.ovh/imgs/2021/10/5ff3602cee7d3b16.png"><br>将文件放在phpStudy\PHPTutorial\WWW\sqli-labs-master<br><img src="https://i.bmp.ovh/imgs/2021/10/2a7cc925c94fc6a7.png"><br>打开 phpStudy\PHPTutorial\WWW\sqli-labs-master\sql-connections\db-creds将$dbpass =’root’;<br>最后打开网站<a href="http://127.0.0.7/sqli-labs-master/">http://127.0.0.7/sqli-labs-master/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;首先下载phpstudy2018&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/37d34a718091421c.png&quot;&gt;&lt;br&gt;解压完后启动&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>密码爆破</title>
