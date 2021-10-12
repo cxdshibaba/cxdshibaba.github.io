@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-11T14:25:37.623Z</updated>
+  <updated>2021-10-12T11:14:40.279Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL语句</title>
+    <link href="http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/</id>
+    <published>2021-10-12T11:14:01.000Z</published>
+    <updated>2021-10-12T11:14:40.279Z</updated>
+    
+    <content type="html"><![CDATA[<p>concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符<br>char（）：将十进制ASCII码转化成字符<br>user（）：返回当前数据库连接使用的用户<br>database（）：返回当前数据库连接使用的数据库<br>version（）：返回当前数据库的版本<br>16进制转换地址：<a href="http://www.bejson.com/convert/ox2str/">http://www.bejson.com/convert/ox2str/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符&lt;br&gt;char（）：将十进制ASCII码转化成字符&lt;br&gt;user（）：返回当前数据库连接使用的用户&lt;br&gt;database（）：返回当前数据库连接使用的数据库&lt;br&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>SQL注入</title>
