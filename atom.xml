@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-12T11:14:40.279Z</updated>
+  <updated>2021-10-13T11:21:23.522Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/"/>
     <id>http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/</id>
     <published>2021-10-12T11:14:01.000Z</published>
-    <updated>2021-10-12T11:14:40.279Z</updated>
+    <updated>2021-10-13T11:21:23.522Z</updated>
     
-    <content type="html"><![CDATA[<p>concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符<br>char（）：将十进制ASCII码转化成字符<br>user（）：返回当前数据库连接使用的用户<br>database（）：返回当前数据库连接使用的数据库<br>version（）：返回当前数据库的版本<br>16进制转换地址：<a href="http://www.bejson.com/convert/ox2str/">http://www.bejson.com/convert/ox2str/</a></p>]]></content>
+    <content type="html"><![CDATA[<p>concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符<br>char（）：将十进制ASCII码转化成字符<br>user（）：返回当前数据库连接使用的用户<br>database（）：返回当前数据库连接使用的数据库<br>version（）：返回当前数据库的版本<br>rand()随机函数，返回0~1之间的某个值<br>floor(a)取整函数，返回小于等于a，且值最接近a的一个整数<br>count()聚合函数也称作计数函数，返回查询对象的总数<br>group by cluase分组语句，按照cluase对查询结果分组<br>16进制转换地址：<a href="http://www.bejson.com/convert/ox2str/">http://www.bejson.com/convert/ox2str/</a></p>]]></content>
     
     
       
