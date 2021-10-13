@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-13T12:08:41.358Z</updated>
+  <updated>2021-10-13T12:24:00.533Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://cxdshibaba.github.io/2021/10/13/MYSQL/"/>
     <id>http://cxdshibaba.github.io/2021/10/13/MYSQL/</id>
     <published>2021-10-13T11:54:04.000Z</published>
-    <updated>2021-10-13T12:08:41.358Z</updated>
+    <updated>2021-10-13T12:24:00.533Z</updated>
     
-    <content type="html"><![CDATA[<p>打开MYSQL命令行输入密码<br><img src="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png"><br>接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表<br><img src="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png"><br>接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示<br><img src="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png"><br>若要拿到users里面的数据，则使用select语句，输入select * from users;<br><img src="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>打开MYSQL命令行输入密码<br><img src="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png"><br>接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表<br><img src="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png"><br>接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示<br><img src="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png"><br>若要拿到users里面的数据，则使用select语句，输入select * from users;<br><img src="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png"><br>万能语句<br>查库：select schema_name from information_schema.schemata<br>查表：select table_name from information_schema.tables where table_schema=’要查的表名’<br>查列：select column_name from information_schema.columns where table_name=’要查的列名’<br>查字段：select XXX,XXX from security.users(XXX为要查的字段）</p>]]></content>
     
     
       

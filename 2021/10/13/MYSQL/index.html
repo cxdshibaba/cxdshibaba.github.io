@@ -20,19 +20,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cxdshibaba.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="打开MYSQL命令行输入密码接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示若要拿到users里面的数据，则使用select语句，输入select * from users;">
+<meta name="description" content="打开MYSQL命令行输入密码接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示若要拿到users里面的数据，则使用select语句，输入select * from users;万能语句查库：sele">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MYSQL基本用法">
 <meta property="og:url" content="http://cxdshibaba.github.io/2021/10/13/MYSQL/index.html">
 <meta property="og:site_name" content="Cxd的博客">
-<meta property="og:description" content="打开MYSQL命令行输入密码接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示若要拿到users里面的数据，则使用select语句，输入select * from users;">
+<meta property="og:description" content="打开MYSQL命令行输入密码接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示若要拿到users里面的数据，则使用select语句，输入select * from users;万能语句查库：sele">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png">
 <meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png">
 <meta property="article:published_time" content="2021-10-13T11:54:04.000Z">
-<meta property="article:modified_time" content="2021-10-13T12:08:41.358Z">
+<meta property="article:modified_time" content="2021-10-13T12:24:00.533Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png">
@@ -190,7 +190,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-13 19:54:04 / Modified: 20:08:41" itemprop="dateCreated datePublished" datetime="2021-10-13T19:54:04+08:00">2021-10-13</time>
+      <time title="Created: 2021-10-13 19:54:04 / Modified: 20:24:00" itemprop="dateCreated datePublished" datetime="2021-10-13T19:54:04+08:00">2021-10-13</time>
     </span>
 
   
@@ -203,7 +203,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>打开MYSQL命令行输入密码<br><img src="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png"><br>接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表<br><img src="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png"><br>接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示<br><img src="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png"><br>若要拿到users里面的数据，则使用select语句，输入select * from users;<br><img src="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png"></p>
+        <p>打开MYSQL命令行输入密码<br><img src="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png"><br>接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表<br><img src="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png"><br>接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示<br><img src="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png"><br>若要拿到users里面的数据，则使用select语句，输入select * from users;<br><img src="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png"><br>万能语句<br>查库：select schema_name from information_schema.schemata<br>查表：select table_name from information_schema.tables where table_schema=’要查的表名’<br>查列：select column_name from information_schema.columns where table_name=’要查的列名’<br>查字段：select XXX,XXX from security.users(XXX为要查的字段）</p>
 
     </div>
 
