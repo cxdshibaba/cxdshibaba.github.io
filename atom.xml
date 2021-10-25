@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-10-13T12:24:00.533Z</updated>
+  <updated>2021-10-25T14:22:15.739Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MYSQL中group_concat用法</title>
+    <link href="http://cxdshibaba.github.io/2021/10/25/MYSQL%E4%B8%ADgroup-concat%E7%94%A8%E6%B3%95/"/>
+    <id>http://cxdshibaba.github.io/2021/10/25/MYSQL%E4%B8%ADgroup-concat%E7%94%A8%E6%B3%95/</id>
+    <published>2021-10-25T14:17:24.000Z</published>
+    <updated>2021-10-25T14:22:15.739Z</updated>
+    
+    <content type="html"><![CDATA[<p>将group by产生的同一个分组中的值连接起来，返回一个字符串结果。group_concat函数首先根据group by指定的列进行分组，将同一组的列显示出来，<br>并且用分隔符分隔。由函数参数（字段名）决定要返回的列。例如：<br><img src="https://i.bmp.ovh/imgs/2021/10/6049e54bbe4a9d3b.png"><br>执行如下查询及结果：<br><img src="https://i.bmp.ovh/imgs/2021/10/520ea0b690b634f6.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;将group by产生的同一个分组中的值连接起来，返回一个字符串结果。group_concat函数首先根据group by指定的列进行分组，将同一组的列显示出来，&lt;br&gt;并且用分隔符分隔。由函数参数（字段名）决定要返回的列。例如：&lt;br&gt;&lt;img src=&quot;https://</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>MYSQL基本用法</title>
