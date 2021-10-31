@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cxdshibaba.github.io/2021/10/31/MYSQL%E4%B8%ADconcat-ws-%E5%87%BD%E6%95%B0/</loc>
+    
+    <lastmod>2021-10-31</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cxdshibaba.github.io/2021/10/25/MYSQL%E4%B8%ADgroup-concat%E7%94%A8%E6%B3%95/</loc>
     
     <lastmod>2021-10-25</lastmod>
@@ -67,7 +74,7 @@
 
   <url>
     <loc>http://cxdshibaba.github.io/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2021-10-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
