@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-11-11T12:23:32.224Z</updated>
+  <updated>2021-11-16T14:32:22.037Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>less-5</title>
+    <link href="http://cxdshibaba.github.io/2021/11/16/less-5/"/>
+    <id>http://cxdshibaba.github.io/2021/11/16/less-5/</id>
+    <published>2021-11-16T14:09:20.000Z</published>
+    <updated>2021-11-16T14:32:22.037Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点<br><img src="https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png"><br>接着使用orde by查询可知有三列<br><img src="https://i.bmp.ovh/imgs/2021/11/49412bcd178ce46f.png"><br>接着用联合查询语句<br><img src="https://i.bmp.ovh/imgs/2021/11/48b1ca9a65a8abd3.png"><br>没有回显，无法使用联合查询语句，说明本题为盲注，可尝试用left函数及burpsuite<br><img src="https://i.bmp.ovh/imgs/2021/11/d7c80ae072931d36.png"><br>由burpsuite可知数据库的首位字母为’s’<br><img src="https://i.bmp.ovh/imgs/2021/11/b44a1962cd714a79.png"><br>第二位字母为’e’<br>由此得出数据库名为’security’</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png&quot;&gt;&lt;br&gt;接着使用orde by查询可知有三列&lt;br&gt;&lt;img sr</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>题目easy_sql</title>
