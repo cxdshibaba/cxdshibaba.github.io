@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-11-21T03:48:41.352Z</updated>
+  <updated>2021-12-03T10:11:51.099Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一次参加闽盾杯</title>
+    <link href="http://cxdshibaba.github.io/2021/12/03/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8F%82%E5%8A%A0%E9%97%BD%E7%9B%BE%E6%9D%AF/"/>
+    <id>http://cxdshibaba.github.io/2021/12/03/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8F%82%E5%8A%A0%E9%97%BD%E7%9B%BE%E6%9D%AF/</id>
+    <published>2021-12-03T10:03:57.000Z</published>
+    <updated>2021-12-03T10:11:51.099Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天第一次参加闽盾杯，题目好难。。。随便写一题<br>附件下载打开后显示<br><img src="https://i.bmp.ovh/imgs/2021/12/215d13e5b6493d32.png"><br>题目提示Modbus/tcp中的最长的，用wireshark打开，在搜索栏输入tcp，点击length，找到flag<br><img src="https://i.bmp.ovh/imgs/2021/12/2d1d16fc379a5448.png"><br><img src="https://i.bmp.ovh/imgs/2021/12/8ad4c64f9550e638.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;昨天第一次参加闽盾杯，题目好难。。。随便写一题&lt;br&gt;附件下载打开后显示&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/12/215d13e5b6493d32.png&quot;&gt;&lt;br&gt;题目提示Modbus/tcp中的最长的，用wireshark</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>finalsql</title>
