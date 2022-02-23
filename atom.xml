@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2021-12-03T10:11:51.099Z</updated>
+  <updated>2022-02-23T08:06:55.854Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>dirsearch命令</title>
+    <link href="http://cxdshibaba.github.io/2022/02/23/dirsearch%E5%91%BD%E4%BB%A4/"/>
+    <id>http://cxdshibaba.github.io/2022/02/23/dirsearch%E5%91%BD%E4%BB%A4/</id>
+    <published>2022-02-23T08:03:25.000Z</published>
+    <updated>2022-02-23T08:06:55.854Z</updated>
+    
+    <content type="html"><![CDATA[<p>dirsearch是一个基于python的命令行工具，旨在暴力扫描页面结构，包括网页中的目录和文件。<br>-u 指定url<br>-e 指定网站语言<br>-w 可以加上自己的字典（带上路径）<br>-r 递归跑（查到一个目录后，在目录后在重复跑，很慢，不建议用）<br>–random-agents 使用代理（使用的代理目录在uesr-agents.txt中，可以自己添加）<br> 例：<br><img src="https://i.bmp.ovh/imgs/2022/02/1485fb69f2928d9c.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;dirsearch是一个基于python的命令行工具，旨在暴力扫描页面结构，包括网页中的目录和文件。&lt;br&gt;-u 指定url&lt;br&gt;-e 指定网站语言&lt;br&gt;-w 可以加上自己的字典（带上路径）&lt;br&gt;-r 递归跑（查到一个目录后，在目录后在重复跑，很慢，不建议用）&lt;br&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>第一次参加闽盾杯</title>
