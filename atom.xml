@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-10T07:06:54.215Z</updated>
+  <updated>2022-04-10T07:16:27.593Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解zip伪加密</title>
+    <link href="http://cxdshibaba.github.io/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/"/>
+    <id>http://cxdshibaba.github.io/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/</id>
+    <published>2022-04-10T07:08:26.000Z</published>
+    <updated>2022-04-10T07:16:27.593Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个ZIP压缩包由三个部分组成：压缩源文件数据区 + 压缩源文件目录区 + 压缩源文件目录结束标志。<br>50 4B 03 04，这是压缩源文件数据区头文件标记<br>50 4B 01 02，这是压缩源文件目录区头文件标记：<br>全局方式位标记的四个数字中只有第二个数字对其有影响，其它的不管为何值，都不影响它的加密属性！<br>第二个数字为奇数时 –&gt;加密<br>第二个数字为偶数时 –&gt;未加密<br>例：<br>无加密<br>压缩源文件数据区的全局加密应当为00 00  （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为00 00（504B0102四个bytes之后）<br>假加密<br>压缩源文件数据区的全局加密应当为00 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00（504B0102四个bytes之后）<br>真加密<br>压缩源文件数据区的全局加密应当为09 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00 （504B0102四个bytes之后）<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/305a2b0b2a5be547.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一个ZIP压缩包由三个部分组成：压缩源文件数据区 + 压缩源文件目录区 + 压缩源文件目录结束标志。&lt;br&gt;50 4B 03 04，这是压缩源文件数据区头文件标记&lt;br&gt;50 4B 01 02，这是压缩源文件目录区头文件标记：&lt;br&gt;全局方式位标记的四个数字中只有第二个数字</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>修改图片宽高</title>

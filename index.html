@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/" class="post-title-link" itemprop="url">解zip伪加密</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-10 15:08:26 / Modified: 15:16:27" itemprop="dateCreated datePublished" datetime="2022-04-10T15:08:26+08:00">2022-04-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>一个ZIP压缩包由三个部分组成：压缩源文件数据区 + 压缩源文件目录区 + 压缩源文件目录结束标志。<br>50 4B 03 04，这是压缩源文件数据区头文件标记<br>50 4B 01 02，这是压缩源文件目录区头文件标记：<br>全局方式位标记的四个数字中只有第二个数字对其有影响，其它的不管为何值，都不影响它的加密属性！<br>第二个数字为奇数时 –&gt;加密<br>第二个数字为偶数时 –&gt;未加密<br>例：<br>无加密<br>压缩源文件数据区的全局加密应当为00 00  （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为00 00（504B0102四个bytes之后）<br>假加密<br>压缩源文件数据区的全局加密应当为00 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00（504B0102四个bytes之后）<br>真加密<br>压缩源文件数据区的全局加密应当为09 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00 （504B0102四个bytes之后）<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/305a2b0b2a5be547.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -714,71 +779,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>指定分隔符<br>使用函数CONCAT_WS()。语法为：CONCAT_WS(separator,str1,str2,…)<br>CONCAT_WS() 代表 CONCAT With Separator ，是CONCAT()的特殊形式。第一个参数是其它参数的分隔符。分隔符放在要连接的两个字符串之间。分<br>隔符可以是一个字符串，也可以是其它参数。<br>例：concat_ws(0x7e,username,password)<br>意思为将usernme和password以波浪号的形式进行隔开（0x7e为波浪号）</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/10/25/MYSQL%E4%B8%ADgroup-concat%E7%94%A8%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/25/MYSQL%E4%B8%ADgroup-concat%E7%94%A8%E6%B3%95/" class="post-title-link" itemprop="url">MYSQL中group_concat用法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-25 22:17:24 / Modified: 22:22:15" itemprop="dateCreated datePublished" datetime="2021-10-25T22:17:24+08:00">2021-10-25</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>将group by产生的同一个分组中的值连接起来，返回一个字符串结果。group_concat函数首先根据group by指定的列进行分组，将同一组的列显示出来，<br>并且用分隔符分隔。由函数参数（字段名）决定要返回的列。例如：<br><img src="https://i.bmp.ovh/imgs/2021/10/6049e54bbe4a9d3b.png"><br>执行如下查询及结果：<br><img src="https://i.bmp.ovh/imgs/2021/10/520ea0b690b634f6.png"></p>
 
       
     </div>
