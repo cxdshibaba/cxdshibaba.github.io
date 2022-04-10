@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-02-23T08:06:55.854Z</updated>
+  <updated>2022-04-10T07:06:54.215Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修改图片宽高</title>
+    <link href="http://cxdshibaba.github.io/2022/04/10/%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%AE%BD%E9%AB%98/"/>
+    <id>http://cxdshibaba.github.io/2022/04/10/%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%AE%BD%E9%AB%98/</id>
+    <published>2022-04-10T07:04:37.000Z</published>
+    <updated>2022-04-10T07:06:54.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>winhex中可以修改图片宽高找到flag，从第二行开始，前四位是宽，后四位是高。<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/f36e549b6978016c.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;winhex中可以修改图片宽高找到flag，从第二行开始，前四位是宽，后四位是高。&lt;br&gt;&lt;img src=&quot;https://s3.bmp.ovh/imgs/2022/04/10/f36e549b6978016c.png&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>dirsearch命令</title>
