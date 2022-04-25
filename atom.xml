@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-18T13:15:02.589Z</updated>
+  <updated>2022-04-25T13:03:42.006Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php://filter 协议</title>
+    <link href="http://cxdshibaba.github.io/2022/04/25/php-filter-%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://cxdshibaba.github.io/2022/04/25/php-filter-%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-04-25T13:01:01.000Z</published>
+    <updated>2022-04-25T13:03:42.006Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.bmp.ovh/imgs/2022/04/25/e8aa51b78f436428.png"><br>1是格式<br>2是可选参数，有read和write，字面意思就是读和写<br>3是过滤器。主要有四种：字符串过滤器，转换过滤器，压缩过滤器，加密过滤器。filter里可以用一或多个过滤器（中间用|隔开），这也为解题提供了多种方法，灵活运用过滤器是解题的关键。这里的过滤器是把文件flag.php里的代码转换（convert）为base64编码（encode）<br>4是必选参数，后面写你要处理的文件名</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2022/04/25/e8aa51b78f436428.png&quot;&gt;&lt;br&gt;1是格式&lt;br&gt;2是可选参数，有read和write，字面意思就是读和写&lt;br&gt;3是过滤器。主要有四种：字符串过滤器，转换过滤器，压缩</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>文件上传漏洞</title>
@@ -396,26 +416,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，&lt;br&gt;将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>用盗版Burp Suite抓包</title>
-    <link href="http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/"/>
-    <id>http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/</id>
-    <published>2021-09-30T13:18:10.000Z</published>
-    <updated>2021-10-07T08:45:39.617Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从<br>HTTP history中找到网址内容<br><img src="https://i.bmp.ovh/imgs/2021/10/3b92b6094495de50.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从&lt;br&gt;HTTP history中找到网址内容&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh</summary>
       
     
     

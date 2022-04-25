@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/25/php-filter-%E5%8D%8F%E8%AE%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/25/php-filter-%E5%8D%8F%E8%AE%AE/" class="post-title-link" itemprop="url">php://filter 协议</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-25 21:01:01 / Modified: 21:03:42" itemprop="dateCreated datePublished" datetime="2022-04-25T21:01:01+08:00">2022-04-25</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><img src="https://i.bmp.ovh/imgs/2022/04/25/e8aa51b78f436428.png"><br>1是格式<br>2是可选参数，有read和write，字面意思就是读和写<br>3是过滤器。主要有四种：字符串过滤器，转换过滤器，压缩过滤器，加密过滤器。filter里可以用一或多个过滤器（中间用|隔开），这也为解题提供了多种方法，灵活运用过滤器是解题的关键。这里的过滤器是把文件flag.php里的代码转换（convert）为base64编码（encode）<br>4是必选参数，后面写你要处理的文件名</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -736,71 +801,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>首先输入?id=1’，出现报错，说明存在漏洞注入，同时用联合查询语句都没有出现回显，说明本体为盲注，使用PyCharm爆破<br>首先写脚本，爆破库名，payload:and substr(database(),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/40ac86564e6d5fa5.png"><br>找到库名为security<br>接着爆破表名，payload:nd substr((select group_concat(table_name) from information_schema.tables where table_schema=database()),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/7fbd316092ee8c20.png"><br>接着查找users里面的数据，payload:and substr((select group_concat(column_name) from information_schema.columns where table_name=’users’),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/60b607a19434dffe.png"><br>最后查找password和username<br><img src="https://s3.bmp.ovh/imgs/2021/11/d2ccc5020876c5b0.png"><br><img src="https://s3.bmp.ovh/imgs/2021/11/9e84d0f9b2c8ea8c.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/11/16/less-5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/16/less-5/" class="post-title-link" itemprop="url">less-5</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-16 22:09:20 / Modified: 22:32:22" itemprop="dateCreated datePublished" datetime="2021-11-16T22:09:20+08:00">2021-11-16</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点<br><img src="https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png"><br>接着使用orde by查询可知有三列<br><img src="https://i.bmp.ovh/imgs/2021/11/49412bcd178ce46f.png"><br>接着用联合查询语句<br><img src="https://i.bmp.ovh/imgs/2021/11/48b1ca9a65a8abd3.png"><br>没有回显，无法使用联合查询语句，说明本题为盲注，可尝试用left函数及burpsuite<br><img src="https://i.bmp.ovh/imgs/2021/11/d7c80ae072931d36.png"><br>由burpsuite可知数据库的首位字母为’s’<br><img src="https://i.bmp.ovh/imgs/2021/11/b44a1962cd714a79.png"><br>第二位字母为’e’<br>由此得出数据库名为’security’</p>
 
       
     </div>
