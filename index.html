@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,76 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/26/Linux%E7%AE%A1%E9%81%93%E7%AC%A6%E5%8F%B7%E5%92%8Cls/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/26/Linux%E7%AE%A1%E9%81%93%E7%AC%A6%E5%8F%B7%E5%92%8Cls/" class="post-title-link" itemprop="url">Linux管道符号和ls</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-26 20:23:33 / Modified: 20:27:21" itemprop="dateCreated datePublished" datetime="2022-04-26T20:23:33+08:00">2022-04-26</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>管道符：<br>多命令执行顺序<br>多命令执行符              格式                        作用<br>     ;               命令1;命令2             多个命令顺序执行，命令之间无任何逻辑关系<br>    &amp;&amp;               命令1&amp;&amp;命令2            逻辑与：当命令1正确执行后，命令2才会正确执行，否则命令2不会执行<br>    ||               命令1||命令2            逻辑或：当命令1不正确执行后，命令2才会正确执行，否则命令2不会执行</p>
+<p>ls命令<br>概述：<br>用来查看当前文件夹下有哪些文件夹和文件的命令</p>
+<p>-a –all的缩写，显示所有文件夹和文件，包括隐藏文件和文件夹（以点开头是隐藏的），还有当前目录和上级目录<br>[root@liuyi lianxi]# ls -a<br>.  ..  liusi1  .zhangsan</p>
+<p>-A  –almost -all的缩写，显示所有文件夹和文件，包括隐藏文件和文件夹（以点开头是隐藏的），但不包括当前目录和上级目录<br>[root@liuyi lianxi]# ls -A<br>liusi1  .zhangsan</p>
+<p>-h  –human-readable的缩写，将文件大小以可读懂的形式展现出来，如：GB，K，M等<br>[root@localhost ~]# ls -l -h<br>总用量 16K<br>-rw——-. 1 root root 1.3K 11月 18 20:51 anaconda-ks.cfg<br>drwxr-xr-x. 4 root root   37 11月 20 17:41 lianxi<br>drwxr-xr-x. 2 root root 8.0K 11月 20 17:12 liu</p>
+<p>-l  ,显示当前目录下文件和文件夹的详细信息<br>[root@localhost ~]# ls -l<br>总用量 16<br>-rw——-. 1 root root 1241 11月 18 20:51 anaconda-ks.cfg<br>drwxr-xr-x. 4 root root   37 11月 20 17:41 lianxi<br>drwxr-xr-x. 2 root root 8192 11月 20 17:12 liu</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -737,71 +807,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>昨天第一次参加闽盾杯，题目好难。。。随便写一题<br>附件下载打开后显示<br><img src="https://i.bmp.ovh/imgs/2021/12/215d13e5b6493d32.png"><br>题目提示Modbus/tcp中的最长的，用wireshark打开，在搜索栏输入tcp，点击length，找到flag<br><img src="https://i.bmp.ovh/imgs/2021/12/2d1d16fc379a5448.png"><br><img src="https://i.bmp.ovh/imgs/2021/12/8ad4c64f9550e638.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/11/21/finalsql/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/21/finalsql/" class="post-title-link" itemprop="url">finalsql</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-21 11:41:30 / Modified: 11:48:41" itemprop="dateCreated datePublished" datetime="2021-11-21T11:41:30+08:00">2021-11-21</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>今天来看看学长布置的题目，，打开网页，在用户名和密码上分别输入order by、union select等字符，发现都被过滤掉<br><img src="https://i.bmp.ovh/imgs/2021/11/576b5a8e3c9d3a34.png"><br>接着按学长的提示，用python爆破盲注，偷一下学长的脚本<br><img src="https://i.bmp.ovh/imgs/2021/11/60af41f9dfe7db65.png"><br>flag就出来啦！！（脚本一点都看不懂）</p>
 
       
     </div>

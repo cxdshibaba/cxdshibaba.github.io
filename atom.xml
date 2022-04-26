@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-26T11:44:15.389Z</updated>
+  <updated>2022-04-26T12:27:21.140Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux管道符号和ls</title>
+    <link href="http://cxdshibaba.github.io/2022/04/26/Linux%E7%AE%A1%E9%81%93%E7%AC%A6%E5%8F%B7%E5%92%8Cls/"/>
+    <id>http://cxdshibaba.github.io/2022/04/26/Linux%E7%AE%A1%E9%81%93%E7%AC%A6%E5%8F%B7%E5%92%8Cls/</id>
+    <published>2022-04-26T12:23:33.000Z</published>
+    <updated>2022-04-26T12:27:21.140Z</updated>
+    
+    <content type="html"><![CDATA[<p>管道符：<br>多命令执行顺序<br>多命令执行符              格式                        作用<br>     ;               命令1;命令2             多个命令顺序执行，命令之间无任何逻辑关系<br>    &amp;&amp;               命令1&amp;&amp;命令2            逻辑与：当命令1正确执行后，命令2才会正确执行，否则命令2不会执行<br>    ||               命令1||命令2            逻辑或：当命令1不正确执行后，命令2才会正确执行，否则命令2不会执行</p><p>ls命令<br>概述：<br>用来查看当前文件夹下有哪些文件夹和文件的命令</p><p>-a –all的缩写，显示所有文件夹和文件，包括隐藏文件和文件夹（以点开头是隐藏的），还有当前目录和上级目录<br>[root@liuyi lianxi]# ls -a<br>.  ..  liusi1  .zhangsan</p><p>-A  –almost -all的缩写，显示所有文件夹和文件，包括隐藏文件和文件夹（以点开头是隐藏的），但不包括当前目录和上级目录<br>[root@liuyi lianxi]# ls -A<br>liusi1  .zhangsan</p><p>-h  –human-readable的缩写，将文件大小以可读懂的形式展现出来，如：GB，K，M等<br>[root@localhost ~]# ls -l -h<br>总用量 16K<br>-rw——-. 1 root root 1.3K 11月 18 20:51 anaconda-ks.cfg<br>drwxr-xr-x. 4 root root   37 11月 20 17:41 lianxi<br>drwxr-xr-x. 2 root root 8.0K 11月 20 17:12 liu</p><p>-l  ,显示当前目录下文件和文件夹的详细信息<br>[root@localhost ~]# ls -l<br>总用量 16<br>-rw——-. 1 root root 1241 11月 18 20:51 anaconda-ks.cfg<br>drwxr-xr-x. 4 root root   37 11月 20 17:41 lianxi<br>drwxr-xr-x. 2 root root 8192 11月 20 17:12 liu</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;管道符：&lt;br&gt;多命令执行顺序&lt;br&gt;多命令执行符              格式                        作用&lt;br&gt;     ;               命令1;命令2             多个命令顺序执行，命令之间无任何逻辑关系&lt;br&gt; </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>空格被过滤可采用的方法</title>
@@ -398,26 +418,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;第一次尝试SQL注入&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png&quot;&gt;&lt;br&gt;使用HackBar输入不同的id值就会返回不同的结果&lt;br&gt;&lt;img src=&quot;https://i.bmp.ov</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>靶场搭建</title>
-    <link href="http://cxdshibaba.github.io/2021/10/11/%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/"/>
-    <id>http://cxdshibaba.github.io/2021/10/11/%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/</id>
-    <published>2021-10-11T13:53:49.000Z</published>
-    <updated>2021-10-11T14:07:37.086Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先下载phpstudy2018<br><img src="https://i.bmp.ovh/imgs/2021/10/37d34a718091421c.png"><br>解压完后启动<br><img src="https://i.bmp.ovh/imgs/2021/10/26e712311d5c7810.png"><br>接着在<a href="https://github.com/Audi-1/sqli-labs%E5%9C%B0%E5%9D%80%E4%B8%AD%E4%B8%8B%E8%BD%BD%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6">https://github.com/Audi-1/sqli-labs地址中下载所有文件</a><br><img src="https://i.bmp.ovh/imgs/2021/10/5ff3602cee7d3b16.png"><br>将文件放在phpStudy\PHPTutorial\WWW\sqli-labs-master<br><img src="https://i.bmp.ovh/imgs/2021/10/2a7cc925c94fc6a7.png"><br>打开 phpStudy\PHPTutorial\WWW\sqli-labs-master\sql-connections\db-creds将$dbpass =’root’;<br>最后打开网站<a href="http://127.0.0.7/sqli-labs-master/">http://127.0.0.7/sqli-labs-master/</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;首先下载phpstudy2018&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/37d34a718091421c.png&quot;&gt;&lt;br&gt;解压完后启动&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10</summary>
       
     
     
