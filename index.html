@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,72 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">空格被过滤可采用的方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-26 19:43:39 / Modified: 19:44:15" itemprop="dateCreated datePublished" datetime="2022-04-26T19:43:39+08:00">2022-04-26</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>过滤空格的解决办法如下</p>
+<p>$IFS<br>${IFS}<br>$IFS$1 //$1改成$加其他数字貌似都行<br>&lt;<br>&lt;&gt;<br>{cat,flag.php}  //用逗号实现了空格功能<br>%20<br>%09 </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -736,71 +802,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>今天来看看学长布置的题目，，打开网页，在用户名和密码上分别输入order by、union select等字符，发现都被过滤掉<br><img src="https://i.bmp.ovh/imgs/2021/11/576b5a8e3c9d3a34.png"><br>接着按学长的提示，用python爆破盲注，偷一下学长的脚本<br><img src="https://i.bmp.ovh/imgs/2021/11/60af41f9dfe7db65.png"><br>flag就出来啦！！（脚本一点都看不懂）</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/11/19/less-8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/19/less-8/" class="post-title-link" itemprop="url">less-8</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-11-19 22:54:24 / Modified: 23:05:30" itemprop="dateCreated datePublished" datetime="2021-11-19T22:54:24+08:00">2021-11-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先输入?id=1’，出现报错，说明存在漏洞注入，同时用联合查询语句都没有出现回显，说明本体为盲注，使用PyCharm爆破<br>首先写脚本，爆破库名，payload:and substr(database(),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/40ac86564e6d5fa5.png"><br>找到库名为security<br>接着爆破表名，payload:nd substr((select group_concat(table_name) from information_schema.tables where table_schema=database()),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/7fbd316092ee8c20.png"><br>接着查找users里面的数据，payload:and substr((select group_concat(column_name) from information_schema.columns where table_name=’users’),{},1)=’{}’–+<br><img src="https://s3.bmp.ovh/imgs/2021/11/60b607a19434dffe.png"><br>最后查找password和username<br><img src="https://s3.bmp.ovh/imgs/2021/11/d2ccc5020876c5b0.png"><br><img src="https://s3.bmp.ovh/imgs/2021/11/9e84d0f9b2c8ea8c.png"></p>
 
       
     </div>

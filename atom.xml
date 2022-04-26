@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-25T13:03:42.006Z</updated>
+  <updated>2022-04-26T11:44:15.389Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>空格被过滤可采用的方法</title>
+    <link href="http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</id>
+    <published>2022-04-26T11:43:39.000Z</published>
+    <updated>2022-04-26T11:44:15.389Z</updated>
+    
+    <content type="html"><![CDATA[<p>过滤空格的解决办法如下</p><p>$IFS<br>${IFS}<br>$IFS$1 //$1改成$加其他数字貌似都行<br>&lt;<br>&lt;&gt;<br>{cat,flag.php}  //用逗号实现了空格功能<br>%20<br>%09 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;过滤空格的解决办法如下&lt;/p&gt;
+&lt;p&gt;$IFS&lt;br&gt;${IFS}&lt;br&gt;$IFS$1 //$1改成$加其他数字貌似都行&lt;br&gt;&amp;lt;&lt;br&gt;&amp;lt;&amp;gt;&lt;br&gt;{cat,flag.php}  //用逗号实现了空格功能&lt;br&gt;%20&lt;br&gt;%09 &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>php://filter 协议</title>
@@ -396,26 +418,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;首先下载phpstudy2018&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/37d34a718091421c.png&quot;&gt;&lt;br&gt;解压完后启动&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>密码爆破</title>
-    <link href="http://cxdshibaba.github.io/2021/10/01/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/"/>
-    <id>http://cxdshibaba.github.io/2021/10/01/%E5%AF%86%E7%A0%81%E7%88%86%E7%A0%B4/</id>
-    <published>2021-10-01T14:22:08.000Z</published>
-    <updated>2021-10-07T09:27:28.785Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，<br>将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着在Position中将用户名两边的&amp;符号删掉，固定爆破密码<br>最后进行爆破<br><img src="https://i.bmp.ovh/imgs/2021/10/fc16f9771bb6d067.png"><br><img src="https://i.bmp.ovh/imgs/2021/10/b01d4ddcf3f72ec1.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，&lt;br&gt;将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着</summary>
       
     
     
