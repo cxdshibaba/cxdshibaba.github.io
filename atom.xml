@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-04-26T12:27:21.140Z</updated>
+  <updated>2022-05-02T01:52:14.747Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常见文件开头</title>
+    <link href="http://cxdshibaba.github.io/2022/05/02/%E5%B8%B8%E8%A7%81%E6%96%87%E4%BB%B6%E5%BC%80%E5%A4%B4/"/>
+    <id>http://cxdshibaba.github.io/2022/05/02/%E5%B8%B8%E8%A7%81%E6%96%87%E4%BB%B6%E5%BC%80%E5%A4%B4/</id>
+    <published>2022-05-02T01:51:52.000Z</published>
+    <updated>2022-05-02T01:52:14.747Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.bmp.ovh/imgs/2022/05/02/410dfc141fc8cf54.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2022/05/02/410dfc141fc8cf54.png&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Linux管道符号和ls</title>
@@ -398,26 +419,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符&lt;br&gt;char（）：将十进制ASCII码转化成字符&lt;br&gt;user（）：返回当前数据库连接使用的用户&lt;br&gt;database（）：返回当前数据库连接使用的数据库&lt;br&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SQL注入</title>
-    <link href="http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/"/>
-    <id>http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/</id>
-    <published>2021-10-11T14:15:50.000Z</published>
-    <updated>2021-10-11T14:25:37.623Z</updated>
-    
-    <content type="html"><![CDATA[<p>第一次尝试SQL注入<br><img src="https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png"><br>使用HackBar输入不同的id值就会返回不同的结果<br><img src="https://i.bmp.ovh/imgs/2021/10/a98b8197325fc4e6.png"><br><img src="https://i.bmp.ovh/imgs/2021/10/901830135911bfb0.png"><br>利用 order by 来判断users表中有几列<br><img src="https://i.bmp.ovh/imgs/2021/10/32f51b600eebe512.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;第一次尝试SQL注入&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png&quot;&gt;&lt;br&gt;使用HackBar输入不同的id值就会返回不同的结果&lt;br&gt;&lt;img src=&quot;https://i.bmp.ov</summary>
       
     
     
