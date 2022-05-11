@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-05-02T01:52:14.747Z</updated>
+  <updated>2022-05-11T02:57:54.318Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zsteg使用方法</title>
+    <link href="http://cxdshibaba.github.io/2022/05/11/zsteg%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://cxdshibaba.github.io/2022/05/11/zsteg%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+    <published>2022-05-11T02:56:51.000Z</published>
+    <updated>2022-05-11T02:57:54.318Z</updated>
+    
+    <content type="html"><![CDATA[<p>查看帮助  zsteg -h<br>查看LSB信息 zsteg pcat.png<br>检测zlib  # -b的位数是从1开始的<br>zsteg zlib.bmp -b 1 -o xy -v<br>显示细节  zsteg pcat.png -v<br>尝试所有已知的组合  zsteg pcat.png -a<br>导出内容   zsteg -E “b1,bgr,lsb,xy” pcat.png &gt; p.exe</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;查看帮助  zsteg -h&lt;br&gt;查看LSB信息 zsteg pcat.png&lt;br&gt;检测zlib  # -b的位数是从1开始的&lt;br&gt;zsteg zlib.bmp -b 1 -o xy -v&lt;br&gt;显示细节  zsteg pcat.png -v&lt;br&gt;尝试所有已知的组合</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>常见文件开头</title>
@@ -399,26 +419,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;打开MYSQL命令行输入密码&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png&quot;&gt;&lt;br&gt;接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表&lt;br&gt;&lt;i</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SQL语句</title>
-    <link href="http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://cxdshibaba.github.io/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/</id>
-    <published>2021-10-12T11:14:01.000Z</published>
-    <updated>2021-10-13T11:52:58.527Z</updated>
-    
-    <content type="html"><![CDATA[<p>concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符<br>char（）：将十进制ASCII码转化成字符<br>user（）：返回当前数据库连接使用的用户<br>database（）：返回当前数据库连接使用的数据库<br>version（）：返回当前数据库的版本<br>rand()随机函数，返回0~1之间的某个值<br>floor(a)取整函数，返回小于等于a，且值最接近a的一个整数<br>count()聚合函数也称作计数函数，返回查询对象的总数<br>group by cluase分组语句，按照cluase对查询结果分组<br>16进制转换地址：<a href="http://www.bejson.com/convert/ox2str/">http://www.bejson.com/convert/ox2str/</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;concat_ws（）：从数据库里取N个字段，然后组合到一起用符号分割显示，第一个参数剩余参数间的分隔符&lt;br&gt;char（）：将十进制ASCII码转化成字符&lt;br&gt;user（）：返回当前数据库连接使用的用户&lt;br&gt;database（）：返回当前数据库连接使用的数据库&lt;br&gt;</summary>
       
     
     
