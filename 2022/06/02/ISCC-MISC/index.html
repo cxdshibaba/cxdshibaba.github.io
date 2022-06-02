@@ -20,32 +20,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cxdshibaba.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="第一次尝试SQL注入使用HackBar输入不同的id值就会返回不同的结果利用 order by 来判断users表中有几列">
+<meta name="description" content="由于做的时候忘记保存，我忘了做的是哪题，回收站里只找到一张图片，就随便做一下。这张图片用许多隐写工具都没有发现什么，最后在别人提示下在stegsolve里发现发现端倪在红绿蓝的0色道中发现了一些不同，将上面的16进制数先转为2进制，再转为字符串就得出flag">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL注入">
-<meta property="og:url" content="http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/index.html">
+<meta property="og:title" content="ISCC MISC">
+<meta property="og:url" content="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC/index.html">
 <meta property="og:site_name" content="Cxd的博客">
-<meta property="og:description" content="第一次尝试SQL注入使用HackBar输入不同的id值就会返回不同的结果利用 order by 来判断users表中有几列">
+<meta property="og:description" content="由于做的时候忘记保存，我忘了做的是哪题，回收站里只找到一张图片，就随便做一下。这张图片用许多隐写工具都没有发现什么，最后在别人提示下在stegsolve里发现发现端倪在红绿蓝的0色道中发现了一些不同，将上面的16进制数先转为2进制，再转为字符串就得出flag">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png">
-<meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/a98b8197325fc4e6.png">
-<meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/901830135911bfb0.png">
-<meta property="og:image" content="https://i.bmp.ovh/imgs/2021/10/32f51b600eebe512.png">
-<meta property="article:published_time" content="2021-10-11T14:15:50.000Z">
-<meta property="article:modified_time" content="2021-10-11T14:25:37.623Z">
+<meta property="og:image" content="https://obohe.com/i/2022/06/02/z8gc5a.png">
+<meta property="og:image" content="https://5fou.com/i/2022/06/02/zjm8tt.png">
+<meta property="og:image" content="https://seikim.com/i/2022/06/02/zktdcr.png">
+<meta property="article:published_time" content="2022-06-02T13:43:42.000Z">
+<meta property="article:modified_time" content="2022-06-02T13:53:34.351Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png">
+<meta name="twitter:image" content="https://obohe.com/i/2022/06/02/z8gc5a.png">
 
 
-<link rel="canonical" href="http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/">
+<link rel="canonical" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/","path":"2021/10/11/SQL注入/","title":"SQL注入"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://cxdshibaba.github.io/2022/06/02/ISCC-MISC/","path":"2022/06/02/ISCC-MISC/","title":"ISCC MISC"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>SQL注入 | Cxd的博客</title>
+<title>ISCC MISC | Cxd的博客</title>
   
 
 
@@ -165,7 +164,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/10/11/SQL%E6%B3%A8%E5%85%A5/">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -178,7 +177,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          SQL注入
+          ISCC MISC
         </h1>
 
         <div class="post-meta-container">
@@ -190,7 +189,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-11 22:15:50 / Modified: 22:25:37" itemprop="dateCreated datePublished" datetime="2021-10-11T22:15:50+08:00">2021-10-11</time>
+      <time title="Created: 2022-06-02 21:43:42 / Modified: 21:53:34" itemprop="dateCreated datePublished" datetime="2022-06-02T21:43:42+08:00">2022-06-02</time>
     </span>
 
   
@@ -203,7 +202,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>第一次尝试SQL注入<br><img src="https://i.bmp.ovh/imgs/2021/10/a476b74f2aea8baf.png"><br>使用HackBar输入不同的id值就会返回不同的结果<br><img src="https://i.bmp.ovh/imgs/2021/10/a98b8197325fc4e6.png"><br><img src="https://i.bmp.ovh/imgs/2021/10/901830135911bfb0.png"><br>利用 order by 来判断users表中有几列<br><img src="https://i.bmp.ovh/imgs/2021/10/32f51b600eebe512.png"></p>
+        <p>由于做的时候忘记保存，我忘了做的是哪题，回收站里只找到一张图片，就随便做一下。<br><img src="https://obohe.com/i/2022/06/02/z8gc5a.png"><br>这张图片用许多隐写工具都没有发现什么，最后在别人提示下在stegsolve里发现发现端倪<br><img src="https://5fou.com/i/2022/06/02/zjm8tt.png"><br>在红绿蓝的0色道中发现了一些不同，将上面的16进制数先转为2进制，再转为字符串就得出flag<br><img src="https://seikim.com/i/2022/06/02/zktdcr.png"></p>
 
     </div>
 
@@ -234,14 +233,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/10/11/%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/" rel="prev" title="靶场搭建">
-                  <i class="fa fa-chevron-left"></i> 靶场搭建
+                <a href="/2022/06/02/ISCC-MISC%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/" rel="prev" title="ISCC MISC降维打击">
+                  <i class="fa fa-chevron-left"></i> ISCC MISC降维打击
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/10/12/SQL%E8%AF%AD%E5%8F%A5/" rel="next" title="SQL语句">
-                  SQL语句 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

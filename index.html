@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">29</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/02/ISCC-MISC/" class="post-title-link" itemprop="url">ISCC MISC</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-02 21:43:42 / Modified: 21:53:34" itemprop="dateCreated datePublished" datetime="2022-06-02T21:43:42+08:00">2022-06-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>由于做的时候忘记保存，我忘了做的是哪题，回收站里只找到一张图片，就随便做一下。<br><img src="https://obohe.com/i/2022/06/02/z8gc5a.png"><br>这张图片用许多隐写工具都没有发现什么，最后在别人提示下在stegsolve里发现发现端倪<br><img src="https://5fou.com/i/2022/06/02/zjm8tt.png"><br>在红绿蓝的0色道中发现了一些不同，将上面的16进制数先转为2进制，再转为字符串就得出flag<br><img src="https://seikim.com/i/2022/06/02/zktdcr.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -742,71 +807,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>首先发现题目过滤了以下关键字<br><img src="https://i.bmp.ovh/imgs/2022/04/12/f29ffb1c7f8e97de.png"><br>接下来尝试堆叠注入<br>查库：1’;show databases;–+<br><img src="https://i.bmp.ovh/imgs/2022/04/12/1d9547a6d4887d65.png"><br>查表：1’;show tables;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/a9578ab6c1a29a49.png"><br>分别查两个字段<br>1’; show columns from <code>1919810931114514</code> ;–+<br>1’; show columns from words ;–+<br>在1919810931114514中发现flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/d94cb4e686054ad0.png"><br>接着可采取handler语句取flag<br>1’;handler <code>1919810931114514</code> open;handler <code>1919810931114514</code> read first;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/7ca5ac3abc251cf2.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/04/10/%E8%A7%A3zip%E4%BC%AA%E5%8A%A0%E5%AF%86/" class="post-title-link" itemprop="url">解zip伪加密</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-04-10 15:08:26 / Modified: 15:16:27" itemprop="dateCreated datePublished" datetime="2022-04-10T15:08:26+08:00">2022-04-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>一个ZIP压缩包由三个部分组成：压缩源文件数据区 + 压缩源文件目录区 + 压缩源文件目录结束标志。<br>50 4B 03 04，这是压缩源文件数据区头文件标记<br>50 4B 01 02，这是压缩源文件目录区头文件标记：<br>全局方式位标记的四个数字中只有第二个数字对其有影响，其它的不管为何值，都不影响它的加密属性！<br>第二个数字为奇数时 –&gt;加密<br>第二个数字为偶数时 –&gt;未加密<br>例：<br>无加密<br>压缩源文件数据区的全局加密应当为00 00  （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为00 00（504B0102四个bytes之后）<br>假加密<br>压缩源文件数据区的全局加密应当为00 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00（504B0102四个bytes之后）<br>真加密<br>压缩源文件数据区的全局加密应当为09 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00 （504B0102四个bytes之后）<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/305a2b0b2a5be547.png"></p>
 
       
     </div>
