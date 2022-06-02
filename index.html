@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-count">31</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E5%A5%97%E4%B8%AD%E5%A5%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/02/ISCC-MISC%E5%A5%97%E4%B8%AD%E5%A5%97/" class="post-title-link" itemprop="url">ISCC MISC套中套</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-02 22:20:13 / Modified: 22:36:00" itemprop="dateCreated datePublished" datetime="2022-06-02T22:20:13+08:00">2022-06-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>打开文件，发现一个类似png的文件，在winhex打开，发现尾部有一串base64文字<br><img src="https://5fou.com/i/2022/06/02/10tej1n.png"><br>解开后为flag2: _ISCC_Zo2z，推测应该还有flag1,因为文件头与png不符合，补全后出现完整的png图片<br><img src="https://5fou.com/i/2022/06/02/10tefqw.png"><br>修改宽高得到flag1，<br><img src="https://5fou.com/i/2022/06/02/10wao6r.png"><br>组合起来原本以为是密码，结果不对，仔细看感觉flag1后面还有，修改合适CRC后放入StegSolve里发现了完整的flag1<br><img src="https://5fou.com/i/2022/06/02/10wakc3.png"><br>解开压缩包后分析python文件发现写的是一个加密的方法，向大佬要来脚本后跑出flag</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -738,95 +803,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/12/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/04/12/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" class="post-title-link" itemprop="url">序列化与反序列化</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-04-12 20:42:55" itemprop="dateCreated datePublished" datetime="2022-04-12T20:42:55+08:00">2022-04-12</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-04-14 16:50:51" itemprop="dateModified" datetime="2022-04-14T16:50:51+08:00">2022-04-14</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>序列化通俗来讲就是将对象转化为可以传输的字符串；反序列化就是把那串可以传输的字符串再变回对象。<br>例：序列化将对象转化为可传输的字符串：<br>首先定义一个对象：</p>
-<?php
-
-class chybeta{undefined
-
-        var $test = '123';
-
-}
-
-$class1 = new chybeta;    //这里就是创建啦一个新的对象
-
-$class1_ser = serialize($class1);   //将这个对象进行字符串封装，就是对其进行序列化
-
-print_r($class1_ser);
-
-?>
-<p>这里输出的结果就是将对象序列化后的可传输的字符串;将这个php文件运行一下就可以啦：<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/1ac671f5521a189b.png"><br>O:7:”chybeta”:1:{s:4:”test”;s:3:”123”;}<br>这里的O呢就是object对象的意思，数字7代表着对象的函数名有7个占位，然后就是对象名了这个数字1表示对象里有一个变量，大括号里的s代表的是string类型还有一个i是int型<br>                             魔法函数:<br>__constuct()    在创建对象是自动调用<br>__destuct()  相当于c++中的析构最后会将对象销毁，所以在对象销毁时 被调用<br>__toString()    但一个对象被当成字符串使用时被调用<br>__sleep()   当对象被序列化之前使用<br>__wakeup()  将在被序列化后立即被调用  //咱们这道题就是利用的这个来利用序列化的<br>这些就是经常在序列化与反序列化中遇到的魔法函数了,一般魔法函数是以__开头的,碰到时可想想能不能用序列化与反序列化漏洞<br>实例分析：<br><img src="https://s3.bmp.ovh/imgs/2022/04/14/7716c89a267c79f0.png"><br>__wakeup()执行漏洞：一个字符串或对象被序列化后，如果其属性被修改，则不会执行__wakeup()函数，这是一个绕过点。<br>当被反序列化的字符串其中对应的对象的属性个数发生变化时，会导致反序列化失败而同时使得_wakeup()函数失效，就是问题的关键所在。所以对其进行修改：<br>O:4:”xctf”:2:{s:4:”flag”;s:3:”111”;}</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>

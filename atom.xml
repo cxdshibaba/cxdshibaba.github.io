@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-06-02T14:18:31.477Z</updated>
+  <updated>2022-06-02T14:36:00.549Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ISCC MISC套中套</title>
+    <link href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E5%A5%97%E4%B8%AD%E5%A5%97/"/>
+    <id>http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E5%A5%97%E4%B8%AD%E5%A5%97/</id>
+    <published>2022-06-02T14:20:13.000Z</published>
+    <updated>2022-06-02T14:36:00.549Z</updated>
+    
+    <content type="html"><![CDATA[<p>打开文件，发现一个类似png的文件，在winhex打开，发现尾部有一串base64文字<br><img src="https://5fou.com/i/2022/06/02/10tej1n.png"><br>解开后为flag2: _ISCC_Zo2z，推测应该还有flag1,因为文件头与png不符合，补全后出现完整的png图片<br><img src="https://5fou.com/i/2022/06/02/10tefqw.png"><br>修改宽高得到flag1，<br><img src="https://5fou.com/i/2022/06/02/10wao6r.png"><br>组合起来原本以为是密码，结果不对，仔细看感觉flag1后面还有，修改合适CRC后放入StegSolve里发现了完整的flag1<br><img src="https://5fou.com/i/2022/06/02/10wakc3.png"><br>解开压缩包后分析python文件发现写的是一个加密的方法，向大佬要来脚本后跑出flag</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;打开文件，发现一个类似png的文件，在winhex打开，发现尾部有一串base64文字&lt;br&gt;&lt;img src=&quot;https://5fou.com/i/2022/06/02/10tej1n.png&quot;&gt;&lt;br&gt;解开后为flag2: _ISCC_Zo2z，推测应该还有flag1</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ISCC MISC 擂台题666</title>
@@ -398,27 +418,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;培训的题目，感觉有点懵，想了好久……..&lt;br&gt;首先看到页面参数为wllm&lt;br&gt;先尝试输入？wllm=1&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/b18c89c31a27ed32.png&quot;&gt;&lt;br&gt;接着尝试？wllm=1’&lt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MYSQL知识</title>
-    <link href="http://cxdshibaba.github.io/2021/11/04/MYSQL%E7%9F%A5%E8%AF%86/"/>
-    <id>http://cxdshibaba.github.io/2021/11/04/MYSQL%E7%9F%A5%E8%AF%86/</id>
-    <published>2021-11-04T13:58:11.000Z</published>
-    <updated>2021-11-04T13:58:45.446Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://i.bmp.ovh/imgs/2021/11/3ac693d22e56ecfa.png"><br>好难理解。。。。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/3ac693d22e56ecfa.png&quot;&gt;&lt;br&gt;好难理解。。。。&lt;/p&gt;
-</summary>
       
     
     
