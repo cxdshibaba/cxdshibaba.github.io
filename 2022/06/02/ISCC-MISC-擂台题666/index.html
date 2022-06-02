@@ -20,23 +20,35 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cxdshibaba.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cxd的博客">
-<meta property="og:url" content="http://cxdshibaba.github.io/archives/2021/11/index.html">
+<meta name="description" content="打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，多次尝试后发现图片为steghide加密接出一张图片，修改宽高后得到压缩包密码解开后是一个流量包，拿去wireshark分析一下，其中发现一个网址打开后发现一个gif动图，逐帧提取发去发现类似base64加密的文字第一张为base64加密，解出key为ISCC，后面两张为AES加密，解出flag">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISCC MISC 擂台题666">
+<meta property="og:url" content="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/index.html">
 <meta property="og:site_name" content="Cxd的博客">
+<meta property="og:description" content="打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，多次尝试后发现图片为steghide加密接出一张图片，修改宽高后得到压缩包密码解开后是一个流量包，拿去wireshark分析一下，其中发现一个网址打开后发现一个gif动图，逐帧提取发去发现类似base64加密的文字第一张为base64加密，解出key为ISCC，后面两张为AES加密，解出flag">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://seikim.com/i/2022/06/02/10e05uv.png">
+<meta property="og:image" content="https://5fou.com/i/2022/06/02/10f4q4h.png">
+<meta property="og:image" content="https://obohe.com/i/2022/06/02/10ggtmi.png">
+<meta property="og:image" content="https://5fou.com/i/2022/06/02/10kn5ic.png">
+<meta property="og:image" content="https://seikim.com/i/2022/06/02/10nys8z.png">
+<meta property="og:image" content="https://seikim.com/i/2022/06/02/10nys28.png">
+<meta property="og:image" content="https://seikim.com/i/2022/06/02/10nyt2m.png">
+<meta property="article:published_time" content="2022-06-02T13:55:45.000Z">
+<meta property="article:modified_time" content="2022-06-02T14:18:31.477Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://seikim.com/i/2022/06/02/10e05uv.png">
 
 
-<link rel="canonical" href="http://cxdshibaba.github.io/archives/2021/11/">
+<link rel="canonical" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/2021/11/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/","path":"2022/06/02/ISCC-MISC-擂台题666/","title":"ISCC MISC 擂台题666"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | Cxd的博客</title>
+<title>ISCC MISC 擂台题666 | Cxd的博客</title>
   
 
 
@@ -145,129 +157,101 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 30 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ISCC MISC 擂台题666
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="Created: 2022-06-02 21:55:45 / Modified: 22:18:31" itemprop="dateCreated datePublished" datetime="2022-06-02T21:55:45+08:00">2022-06-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，<br><img src="https://seikim.com/i/2022/06/02/10e05uv.png"><br>多次尝试后发现图片为steghide加密<br><img src="https://5fou.com/i/2022/06/02/10f4q4h.png"><br>接出一张图片，修改宽高后得到压缩包密码<br><img src="https://obohe.com/i/2022/06/02/10ggtmi.png"><br>解开后是一个流量包，拿去wireshark分析一下，其中发现一个网址<br><img src="https://5fou.com/i/2022/06/02/10kn5ic.png"><br>打开后发现一个gif动图，逐帧提取发去发现类似base64加密的文字<br><img src="https://seikim.com/i/2022/06/02/10nys8z.png"><br><img src="https://seikim.com/i/2022/06/02/10nys28.png"><br><img src="https://seikim.com/i/2022/06/02/10nyt2m.png"><br>第一张为base64加密，解出key为ISCC，后面两张为AES加密，解出flag</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-21T11:41:30+08:00"
-              content="2021-11-21">
-          11-21
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
       </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/21/finalsql/" itemprop="url">
-            <span itemprop="name">finalsql</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-19T22:54:24+08:00"
-              content="2021-11-19">
-          11-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/19/less-8/" itemprop="url">
-            <span itemprop="name">less-8</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-16T22:09:20+08:00"
-              content="2021-11-16">
-          11-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/16/less-5/" itemprop="url">
-            <span itemprop="name">less-5</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-11T19:56:09+08:00"
-              content="2021-11-11">
-          11-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/11/%E9%A2%98%E7%9B%AEeasy-sql/" itemprop="url">
-            <span itemprop="name">题目easy_sql</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-11-04T21:58:11+08:00"
-              content="2021-11-04">
-          11-04
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/11/04/MYSQL%E7%9F%A5%E8%AF%86/" itemprop="url">
-            <span itemprop="name">MYSQL知识</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-
-    </div>
   </div>
-  
-  
-  
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/06/02/ISCC-MISC/" rel="prev" title="ISCC MISC">
+                  <i class="fa fa-chevron-left"></i> ISCC MISC
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
 
 </div>
   </main>

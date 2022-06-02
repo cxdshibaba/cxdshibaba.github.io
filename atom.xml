@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-06-02T13:53:34.351Z</updated>
+  <updated>2022-06-02T14:18:31.477Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ISCC MISC 擂台题666</title>
+    <link href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/"/>
+    <id>http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/</id>
+    <published>2022-06-02T13:55:45.000Z</published>
+    <updated>2022-06-02T14:18:31.477Z</updated>
+    
+    <content type="html"><![CDATA[<p>打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，<br><img src="https://seikim.com/i/2022/06/02/10e05uv.png"><br>多次尝试后发现图片为steghide加密<br><img src="https://5fou.com/i/2022/06/02/10f4q4h.png"><br>接出一张图片，修改宽高后得到压缩包密码<br><img src="https://obohe.com/i/2022/06/02/10ggtmi.png"><br>解开后是一个流量包，拿去wireshark分析一下，其中发现一个网址<br><img src="https://5fou.com/i/2022/06/02/10kn5ic.png"><br>打开后发现一个gif动图，逐帧提取发去发现类似base64加密的文字<br><img src="https://seikim.com/i/2022/06/02/10nys8z.png"><br><img src="https://seikim.com/i/2022/06/02/10nys28.png"><br><img src="https://seikim.com/i/2022/06/02/10nyt2m.png"><br>第一张为base64加密，解出key为ISCC，后面两张为AES加密，解出flag</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，&lt;br&gt;&lt;img src=&quot;https://seikim.com/i/2022/06/02/10e05uv.png&quot;&gt;&lt;br&gt;多次尝试后发现图片为steghide加密&lt;br&gt;&lt;img src=&quot;https://</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ISCC MISC</title>
@@ -399,26 +419,6 @@ class chybeta{undefined
       
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/3ac693d22e56ecfa.png&quot;&gt;&lt;br&gt;好难理解。。。。&lt;/p&gt;
 </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MYSQL中concat_ws()函数</title>
-    <link href="http://cxdshibaba.github.io/2021/10/31/MYSQL%E4%B8%ADconcat-ws-%E5%87%BD%E6%95%B0/"/>
-    <id>http://cxdshibaba.github.io/2021/10/31/MYSQL%E4%B8%ADconcat-ws-%E5%87%BD%E6%95%B0/</id>
-    <published>2021-10-31T15:31:19.000Z</published>
-    <updated>2021-10-31T15:36:56.099Z</updated>
-    
-    <content type="html"><![CDATA[<p>指定分隔符<br>使用函数CONCAT_WS()。语法为：CONCAT_WS(separator,str1,str2,…)<br>CONCAT_WS() 代表 CONCAT With Separator ，是CONCAT()的特殊形式。第一个参数是其它参数的分隔符。分隔符放在要连接的两个字符串之间。分<br>隔符可以是一个字符串，也可以是其它参数。<br>例：concat_ws(0x7e,username,password)<br>意思为将usernme和password以波浪号的形式进行隔开（0x7e为波浪号）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;指定分隔符&lt;br&gt;使用函数CONCAT_WS()。语法为：CONCAT_WS(separator,str1,str2,…)&lt;br&gt;CONCAT_WS() 代表 CONCAT With Separator ，是CONCAT()的特殊形式。第一个参数是其它参数的分隔符。分隔符放</summary>
       
     
     

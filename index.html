@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/02/ISCC-MISC-%E6%93%82%E5%8F%B0%E9%A2%98666/" class="post-title-link" itemprop="url">ISCC MISC 擂台题666</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-02 21:55:45 / Modified: 22:18:31" itemprop="dateCreated datePublished" datetime="2022-06-02T21:55:45+08:00">2022-06-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>打开文件发现是一个伪加密，解开后是一张图片和一个真加密的压缩包，<br><img src="https://seikim.com/i/2022/06/02/10e05uv.png"><br>多次尝试后发现图片为steghide加密<br><img src="https://5fou.com/i/2022/06/02/10f4q4h.png"><br>接出一张图片，修改宽高后得到压缩包密码<br><img src="https://obohe.com/i/2022/06/02/10ggtmi.png"><br>解开后是一个流量包，拿去wireshark分析一下，其中发现一个网址<br><img src="https://5fou.com/i/2022/06/02/10kn5ic.png"><br>打开后发现一个gif动图，逐帧提取发去发现类似base64加密的文字<br><img src="https://seikim.com/i/2022/06/02/10nys8z.png"><br><img src="https://seikim.com/i/2022/06/02/10nys28.png"><br><img src="https://seikim.com/i/2022/06/02/10nyt2m.png"><br>第一张为base64加密，解出key为ISCC，后面两张为AES加密，解出flag</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -742,71 +807,6 @@ print_r($class1_ser);
 
 ?>
 <p>这里输出的结果就是将对象序列化后的可传输的字符串;将这个php文件运行一下就可以啦：<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/1ac671f5521a189b.png"><br>O:7:”chybeta”:1:{s:4:”test”;s:3:”123”;}<br>这里的O呢就是object对象的意思，数字7代表着对象的函数名有7个占位，然后就是对象名了这个数字1表示对象里有一个变量，大括号里的s代表的是string类型还有一个i是int型<br>                             魔法函数:<br>__constuct()    在创建对象是自动调用<br>__destuct()  相当于c++中的析构最后会将对象销毁，所以在对象销毁时 被调用<br>__toString()    但一个对象被当成字符串使用时被调用<br>__sleep()   当对象被序列化之前使用<br>__wakeup()  将在被序列化后立即被调用  //咱们这道题就是利用的这个来利用序列化的<br>这些就是经常在序列化与反序列化中遇到的魔法函数了,一般魔法函数是以__开头的,碰到时可想想能不能用序列化与反序列化漏洞<br>实例分析：<br><img src="https://s3.bmp.ovh/imgs/2022/04/14/7716c89a267c79f0.png"><br>__wakeup()执行漏洞：一个字符串或对象被序列化后，如果其属性被修改，则不会执行__wakeup()函数，这是一个绕过点。<br>当被反序列化的字符串其中对应的对象的属性个数发生变化时，会导致反序列化失败而同时使得_wakeup()函数失效，就是问题的关键所在。所以对其进行修改：<br>O:4:”xctf”:2:{s:4:”flag”;s:3:”111”;}</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/04/12/%E5%A0%86%E5%8F%A0%E6%B3%A8%E5%85%A5/" class="post-title-link" itemprop="url">堆叠注入</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-04-12 19:14:35 / Modified: 19:35:14" itemprop="dateCreated datePublished" datetime="2022-04-12T19:14:35+08:00">2022-04-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先发现题目过滤了以下关键字<br><img src="https://i.bmp.ovh/imgs/2022/04/12/f29ffb1c7f8e97de.png"><br>接下来尝试堆叠注入<br>查库：1’;show databases;–+<br><img src="https://i.bmp.ovh/imgs/2022/04/12/1d9547a6d4887d65.png"><br>查表：1’;show tables;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/a9578ab6c1a29a49.png"><br>分别查两个字段<br>1’; show columns from <code>1919810931114514</code> ;–+<br>1’; show columns from words ;–+<br>在1919810931114514中发现flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/d94cb4e686054ad0.png"><br>接着可采取handler语句取flag<br>1’;handler <code>1919810931114514</code> open;handler <code>1919810931114514</code> read first;–+<br><img src="https://s3.bmp.ovh/imgs/2022/04/12/7ca5ac3abc251cf2.png"></p>
 
       
     </div>
