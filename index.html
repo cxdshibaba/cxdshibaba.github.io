@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">27</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/06/02/ISCC-MISC%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/" class="post-title-link" itemprop="url">ISCC MISC降维打击</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-06-02 21:02:28 / Modified: 21:24:05" itemprop="dateCreated datePublished" datetime="2022-06-02T21:02:28+08:00">2022-06-02</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>打开文件发现一张图片，先拖去binwalk看一下<br><img src="https://i.bmp.ovh/imgs/2022/06/02/ff27bce59399e340.png"><br>这里发现有隐藏图片，分离得到下面图片<br><img src="https://obohe.com/i/2022/06/02/9ppo3l9.png"><br>尝试了多种解密方式，最后发现是zstge，解出一张图片<br><img src="https://5fou.com/i/2022/06/02/z0phm8.png"><br>网上查了许多，最后发现是魔女之旅的文字。。。。。。。<br><img src="https://seikim.com/i/2022/06/02/z3ltb6.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -742,71 +807,6 @@ print_r($class1_ser);
     
     <div class="post-body" itemprop="articleBody">
           <p>一个ZIP压缩包由三个部分组成：压缩源文件数据区 + 压缩源文件目录区 + 压缩源文件目录结束标志。<br>50 4B 03 04，这是压缩源文件数据区头文件标记<br>50 4B 01 02，这是压缩源文件目录区头文件标记：<br>全局方式位标记的四个数字中只有第二个数字对其有影响，其它的不管为何值，都不影响它的加密属性！<br>第二个数字为奇数时 –&gt;加密<br>第二个数字为偶数时 –&gt;未加密<br>例：<br>无加密<br>压缩源文件数据区的全局加密应当为00 00  （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为00 00（504B0102四个bytes之后）<br>假加密<br>压缩源文件数据区的全局加密应当为00 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00（504B0102四个bytes之后）<br>真加密<br>压缩源文件数据区的全局加密应当为09 00 （504B0304两个bytes之后）<br>且压缩源文件目录区的全局方式位标记应当为09 00 （504B0102四个bytes之后）<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/305a2b0b2a5be547.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/10/%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%AE%BD%E9%AB%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/04/10/%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E5%AE%BD%E9%AB%98/" class="post-title-link" itemprop="url">修改图片宽高</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-04-10 15:04:37 / Modified: 15:06:54" itemprop="dateCreated datePublished" datetime="2022-04-10T15:04:37+08:00">2022-04-10</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>winhex中可以修改图片宽高找到flag，从第二行开始，前四位是宽，后四位是高。<br><img src="https://s3.bmp.ovh/imgs/2022/04/10/f36e549b6978016c.png"></p>
 
       
     </div>

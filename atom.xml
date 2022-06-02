@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-05-11T03:13:48.910Z</updated>
+  <updated>2022-06-02T13:24:05.294Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ISCC MISC降维打击</title>
+    <link href="http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/"/>
+    <id>http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E9%99%8D%E7%BB%B4%E6%89%93%E5%87%BB/</id>
+    <published>2022-06-02T13:02:28.000Z</published>
+    <updated>2022-06-02T13:24:05.294Z</updated>
+    
+    <content type="html"><![CDATA[<p>打开文件发现一张图片，先拖去binwalk看一下<br><img src="https://i.bmp.ovh/imgs/2022/06/02/ff27bce59399e340.png"><br>这里发现有隐藏图片，分离得到下面图片<br><img src="https://obohe.com/i/2022/06/02/9ppo3l9.png"><br>尝试了多种解密方式，最后发现是zstge，解出一张图片<br><img src="https://5fou.com/i/2022/06/02/z0phm8.png"><br>网上查了许多，最后发现是魔女之旅的文字。。。。。。。<br><img src="https://seikim.com/i/2022/06/02/z3ltb6.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;打开文件发现一张图片，先拖去binwalk看一下&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2022/06/02/ff27bce59399e340.png&quot;&gt;&lt;br&gt;这里发现有隐藏图片，分离得到下面图片&lt;br&gt;&lt;img src=&quot;https:/</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>zsteg使用方法</title>
@@ -399,26 +419,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;将group by产生的同一个分组中的值连接起来，返回一个字符串结果。group_concat函数首先根据group by指定的列进行分组，将同一组的列显示出来，&lt;br&gt;并且用分隔符分隔。由函数参数（字段名）决定要返回的列。例如：&lt;br&gt;&lt;img src=&quot;https://</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MYSQL基本用法</title>
-    <link href="http://cxdshibaba.github.io/2021/10/13/MYSQL/"/>
-    <id>http://cxdshibaba.github.io/2021/10/13/MYSQL/</id>
-    <published>2021-10-13T11:54:04.000Z</published>
-    <updated>2021-10-13T12:24:00.533Z</updated>
-    
-    <content type="html"><![CDATA[<p>打开MYSQL命令行输入密码<br><img src="https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png"><br>接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表<br><img src="https://i.bmp.ovh/imgs/2021/10/6904ea165406b536.png"><br>接着我们尝试使用表security，输入use security;   此时显示数据库已被改变，接着再输入show tables;此时数据库里所含的表就全部显示<br><img src="https://i.bmp.ovh/imgs/2021/10/9a57690025029368.png"><br>若要拿到users里面的数据，则使用select语句，输入select * from users;<br><img src="https://i.bmp.ovh/imgs/2021/10/f994cc89fdc84eea.png"><br>万能语句<br>查库：select schema_name from information_schema.schemata<br>查表：select table_name from information_schema.tables where table_schema=’要查的表名’<br>查列：select column_name from information_schema.columns where table_name=’要查的列名’<br>查字段：select XXX,XXX from security.users(XXX为要查的字段）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;打开MYSQL命令行输入密码&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/10/6088060157ec91b6.png&quot;&gt;&lt;br&gt;接着首先看里面的表 输入show databases;（；一定要加）这时候会显示里面所有的表&lt;br&gt;&lt;i</summary>
       
     
     
