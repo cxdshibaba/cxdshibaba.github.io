@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://cxdshibaba.github.io/2022/07/07/LINUX%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2022-07-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://cxdshibaba.github.io/2022/06/02/ISCC-MISC%E5%A5%97%E4%B8%AD%E5%A5%97/</loc>
     
     <lastmod>2022-06-02</lastmod>
@@ -221,7 +228,7 @@
 
   <url>
     <loc>http://cxdshibaba.github.io/</loc>
-    <lastmod>2022-06-02</lastmod>
+    <lastmod>2022-07-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
