@@ -116,7 +116,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">33</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -146,6 +146,71 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/11/16/less-5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/16/less-5/" class="post-title-link" itemprop="url">less-5</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2021-11-16 22:09:20 / Modified: 22:32:22" itemprop="dateCreated datePublished" datetime="2021-11-16T22:09:20+08:00">2021-11-16</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点<br><img src="https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png"><br>接着使用orde by查询可知有三列<br><img src="https://i.bmp.ovh/imgs/2021/11/49412bcd178ce46f.png"><br>接着用联合查询语句<br><img src="https://i.bmp.ovh/imgs/2021/11/48b1ca9a65a8abd3.png"><br>没有回显，无法使用联合查询语句，说明本题为盲注，可尝试用left函数及burpsuite<br><img src="https://i.bmp.ovh/imgs/2021/11/d7c80ae072931d36.png"><br>由burpsuite可知数据库的首位字母为’s’<br><img src="https://i.bmp.ovh/imgs/2021/11/b44a1962cd714a79.png"><br>第二位字母为’e’<br>由此得出数据库名为’security’</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -726,77 +791,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>首先在创建文本，将若干条弱口令字典放在文本中，接着打开要爆破的网页，同时打开Burp Suite,对网页进行拦截，接着在HTTP history中找到拦截的网站，<br>将其发送到测试器，接着在Intruder中的Payload载入有效载荷选项，将弱口令字典的文本载入，接着在Position中将用户名两边的&amp;符号删掉，固定爆破密码<br>最后进行爆破<br><img src="https://i.bmp.ovh/imgs/2021/10/fc16f9771bb6d067.png"><br><img src="https://i.bmp.ovh/imgs/2021/10/b01d4ddcf3f72ec1.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/09/30/%E7%94%A8Burp-Suite%E6%8A%93%E5%8C%85/" class="post-title-link" itemprop="url">用盗版Burp Suite抓包</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-09-30 21:18:10" itemprop="dateCreated datePublished" datetime="2021-09-30T21:18:10+08:00">2021-09-30</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-07 16:45:39" itemprop="dateModified" datetime="2021-10-07T16:45:39+08:00">2021-10-07</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先打开Burp Suite，接着开临时项目，接着使用Burp的默认值，接着在Proxy中Open Browser，把要抓包的网址复制到Browser中的网页，接着从<br>HTTP history中找到网址内容<br><img src="https://i.bmp.ovh/imgs/2021/10/3b92b6094495de50.png"></p>
 
       
     </div>

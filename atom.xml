@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-07-07T07:43:48.173Z</updated>
+  <updated>2022-07-08T08:00:11.269Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件上传绕过后缀的文件格式</title>
+    <link href="http://cxdshibaba.github.io/2022/07/08/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87%E5%90%8E%E7%BC%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"/>
+    <id>http://cxdshibaba.github.io/2022/07/08/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87%E5%90%8E%E7%BC%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</id>
+    <published>2022-07-08T07:59:20.000Z</published>
+    <updated>2022-07-08T08:00:11.269Z</updated>
+    
+    <content type="html"><![CDATA[<p>php,php3,php4,php5,phtml.pht</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;php,php3,php4,php5,phtml.pht&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>LINUX常用命令</title>
@@ -398,26 +419,6 @@ class chybeta{undefined
       
       
     <summary type="html">&lt;p&gt;首先输入?id=1’，出现报错，说明存在漏洞注入，同时用联合查询语句都没有出现回显，说明本体为盲注，使用PyCharm爆破&lt;br&gt;首先写脚本，爆破库名，payload:and substr(database(),{},1)=’{}’–+&lt;br&gt;&lt;img src=&quot;https</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>less-5</title>
-    <link href="http://cxdshibaba.github.io/2021/11/16/less-5/"/>
-    <id>http://cxdshibaba.github.io/2021/11/16/less-5/</id>
-    <published>2021-11-16T14:09:20.000Z</published>
-    <updated>2021-11-16T14:32:22.037Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点<br><img src="https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png"><br>接着使用orde by查询可知有三列<br><img src="https://i.bmp.ovh/imgs/2021/11/49412bcd178ce46f.png"><br>接着用联合查询语句<br><img src="https://i.bmp.ovh/imgs/2021/11/48b1ca9a65a8abd3.png"><br>没有回显，无法使用联合查询语句，说明本题为盲注，可尝试用left函数及burpsuite<br><img src="https://i.bmp.ovh/imgs/2021/11/d7c80ae072931d36.png"><br>由burpsuite可知数据库的首位字母为’s’<br><img src="https://i.bmp.ovh/imgs/2021/11/b44a1962cd714a79.png"><br>第二位字母为’e’<br>由此得出数据库名为’security’</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;首先输入?id=1测试，未发现漏洞，接着输入?=1’，报错，说明存在注入点&lt;br&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2021/11/3629592a82d2adf7.png&quot;&gt;&lt;br&gt;接着使用orde by查询可知有三列&lt;br&gt;&lt;img sr</summary>
       
     
     
